@@ -62,3 +62,81 @@ function preguntasFrecuentes() {
         preguntasFrecuentes()
     }
 }
+
+//--
+function generadorAutomatico() {
+    canciones.push(new Contenido("Bejo", "Agusto"))
+    canciones.push(new Contenido("Bejo", "A mi manera"))
+    canciones.push(new Contenido("Bejo", "Mentecato"))
+    canciones.push(new Contenido("Bejo", "Como los gatos"))
+    canciones.push(new Contenido("Rosalia", "Bizcochito"))
+    canciones.push(new Contenido("Rosalia", "Despechá"))
+    canciones.push(new Contenido("Lasser", "Cat life"))
+    canciones.push(new Contenido("Lasser", "Sugar"))
+    canciones.push(new Contenido("Lasser", "Paperplanes"))
+    canciones.push(new Contenido("Craneo", "Escorpiones"))
+    canciones.push(new Contenido("Craneo", "Mi locura"))
+    canciones.push(new Contenido("Craneo", "Ahumado"))
+    canciones.push(new Contenido("Craneo", "Burbujas"))
+}
+generadorAutomatico()
+
+const listarCanciones = () => {
+    console.table(canciones)
+}
+
+const agregarCancion = () => {
+    let artista = prompt("Ingrese el nombre del artista de la canción que desea agregar:")
+    let cancion = prompt("Ingrese el nombre de la canción que desea agregar:")
+    canciones.push(new Contenido(artista, cancion))
+    listarCanciones()
+}
+
+//--
+function filtrarArtista() {
+    let buscar = prompt("Que Artista quieres escuchar hoy?")
+    let resultado = canciones.filter(elemento => elemento.artista.includes(buscar))
+        if (resultado == []){
+            console.warn("No se encontro ese Artista")
+        } else {
+            console.table(resultado)
+        }
+}
+
+function filtrarCancion() {
+    let buscar = prompt("Que canción quieres escuchar hoy?")
+    let resultado = canciones.filter(elemento => elemento.cancion.includes(buscar))
+        if (resultado == []){
+            console.warn("No se encontro ese Artista")
+        } else {
+            console.table(resultado)
+        }
+}
+
+//--
+function ordenarPorArtista() {
+    let artistasOrdenados = canciones.sort((a,b) => {
+        if (a.artista > b.artista) {
+            return 1
+        }
+        if (a.artista < b.artista) {
+            return -1
+        }
+        return 0
+    })
+    console.table(artistasOrdenados)
+}
+
+function ordenarPorCancion() {
+    let cancionesOrdenadas = canciones.sort((a,b) => {
+        if (a.cancion > b.cancion) {
+            return 1
+        }
+        if (a.cancion < b.cancion) {
+            return -1
+        }
+        return 0
+    })
+    console.table(cancionesOrdenadas)
+}
+
