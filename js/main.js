@@ -64,6 +64,30 @@ function preguntasFrecuentes() {
 }
 
 //--
+function recorrerGeneros() {
+    for (elemento of generos) {
+        console.log(elemento)
+    }
+}
+
+function agregarGenero() {
+    let nuevoGenero = prompt("Que genero deseas agregar?").trim()
+    if (generos.includes(nuevoGenero) && nuevoGenero.length > 0) {
+        respuesta = confirm("El genero "+ nuevoGenero + " ya existe, quieres agregar otro?")
+        if (respuesta) {
+            agregarGenero()
+        }
+    } else {
+        generos.push(nuevoGenero)
+    }
+}
+
+function ordenarGeneros() {
+    let generosOrdenados = generos.sort()
+    console.log(generosOrdenados)
+}
+
+//--
 function generadorAutomatico() {
     canciones.push(new Contenido("Bejo", "Agusto"))
     canciones.push(new Contenido("Bejo", "A mi manera"))
@@ -86,10 +110,17 @@ const listarCanciones = () => {
 }
 
 const agregarCancion = () => {
-    let artista = prompt("Ingrese el nombre del artista de la canción que desea agregar:")
-    let cancion = prompt("Ingrese el nombre de la canción que desea agregar:")
-    canciones.push(new Contenido(artista, cancion))
-    listarCanciones()
+    let artista = prompt("Ingrese el nombre del artista de la canción que desea agregar:").trim()
+    let cancion = prompt("Ingrese el nombre de la canción que desea agregar:").trim()
+
+    if ((artista.length > 0) && (cancion.length > 0)) {
+        canciones.push(new Contenido(artista, cancion))
+        listarCanciones()
+    } else {
+        console.warn("Por favor, agrega una canción")
+        agregarCancion()
+    }
+
 }
 
 //--
@@ -107,7 +138,7 @@ function filtrarCancion() {
     let buscar = prompt("Que canción quieres escuchar hoy?")
     let resultado = canciones.filter(elemento => elemento.cancion.includes(buscar))
         if (resultado == []){
-            console.warn("No se encontro ese Artista")
+            console.warn("No se encontro esa cancion")
         } else {
             console.table(resultado)
         }
@@ -138,5 +169,14 @@ function ordenarPorCancion() {
         return 0
     })
     console.table(cancionesOrdenadas)
+}
+
+function quitarArtista() {
+    let quitarArtista = prompt("Ingrese el pais que desea quitar de la lista:").trim()
+    let posicion = canciones.artista.indexOf(quitarArtista)
+        if (posicion > -1) {
+            let artistaQuitado = canciones.artista.splice(posicion,1)
+            console.log(artistaQuitado)
+        }
 }
 
