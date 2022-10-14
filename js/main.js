@@ -87,6 +87,16 @@ function ordenarGeneros() {
     console.log(generosOrdenados)
 }
 
+function buscarGenero() {
+    let buscar = prompt("Cual es el genero que deseas buscar?")
+    let resultado = generos.find(elemento => elemento.includes(buscar))
+        if (resultado == undefined){
+            console.warn("No se encontro ese genero")
+        } else {
+            console.log(resultado)
+        }
+}
+
 //--
 function generadorAutomatico() {
     canciones.push(new Contenido("Bejo", "Agusto"))
