@@ -1,41 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Musika</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./css/estilos.css"></script>
     <script src="./js/variables.js"></script>
     <script src="./js/contenido.js"></script>
     <script src="./js/main.js"></script>
-</head>
-<body>
-    <h2>
-        Musika
-    </h2>
-    <p>
-        Mi idea por el momento es realizar una página para escuchar música. Aún no tengo muy claro como hacerlo, pero cree algunas funciones que creo que van a poder ayudarme.
-    </p>
+    <script defer src="./js/arrayGenero.js"></script>
+    <script defer src="./js/canciones.js"></script>
+    <script defer src=".js/botones.js"></script>
 
-    <ul>
+</head>
+
+<body>
+    <div>
+        <h2 id="titulo">
+            Musika
+        </h2>
         <p>
-            Las funciones que hice son:
+            Mi idea por el momento es realizar una página para escuchar música. Aún no tengo muy claro como hacerlo,
+            pero
+            cree algunas funciones que creo que van a poder ayudarme.
         </p>
-        <li>
-            bienvenida(nombreUsuario) 
-        </li>
-        <li>
-            registro()
-        </li>
-        <li>
-            conteoSuscriptores()
-        </li>
-        <li>
-            felicidades()
-        </li>
-        <li>
-            preguntasFrecuentes()
-        </li>
-    </ul>
+    </div>
+    <!--Generos-->
+    <div>
+        <div>
+            <input class="buscarGenero" type="search" placeholder="Qué genero buscas?...">
+            <button class="ordenarGeneros">Ordenar generos</button>
+            <button class="agregarGenero">Agregar genero</button>
+            <button class="eliminarGenero">Eliminar genero</button>
+        </div>
+        <ul>
+
+        </ul>
+
+    </div>
+
+    <!--Canciones-->
+    <div>
+        <div>
+            <input class="buscarCanciones" type="search" placeholder="Qué quieres escuchar?...">
+            <button class="agregarCancion">Agregar cancion</button>
+            <button class="ordenarArtistas">Ordenar por artista</button>
+            <button class="ordenarCanciones">Ordenar por cancion</button>
+            <button class="ordenarMeGustas">Ordenar por me gustas</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Artista</th>
+                    <th>Canción</th>
+                    <th>Me gustas</th>
+                    <th>Video</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div>
+            <button class="meGusta">👍🏻 Me gusta</button>
+            <button class="suscribirse">🔔 Suscribirse</button>
+            <button class="guardar">➕ Guardar</button>
+        </div>
+    </div>
+
+
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zVWICv4cCtE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KaA6waEphOc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
 </body>
+
 </html>

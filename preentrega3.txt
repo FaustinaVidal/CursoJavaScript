@@ -1,0 +1,37 @@
+Esta parte seria lo que he realizado sobre la clase 5
+-----------------------------------------------------------------------
+Separe el array genero (arrayGenero.js) del objeto canciones (canciones.js)
+
+Modificaciones en arrayGenero.js
+	- Cree la funcion mostrarGeneros() para que me muestre los generos en el HTML
+	- Modifique ordenarGeneros(), agregarGenero() y eliminarGenero() para que borre, agregue y ordene el/los generos del HTML
+	- Modifique la funcion de eliminarGenero() porque no funcionaba
+
+Modificaciones en contenido.js
+	- Agregue otro atributo al Contenido de mi objeto canciones para que se visualicen también los meGusta.
+
+Modificaciones en canciones.js
+	- Cree la funcion meGusta() para que me diera un numero random
+	- Agregue el atributo meGusta a la funcion generadorAutomatico() y agregarCancion()
+	- Agregue la funcion ordenarPormeGusta()
+	- Cree la funcion felicionPormeGusta() para que felicite la cancion cuando llegue a i meGusta.
+	- Cree las funciones armandoTablaCanciones(elemento) y tablaCanciones() para que genere una tabla en el HTML con mis canciones.
+	- Modifique las funciones ordenarPormeGusta(), ordenarPorArtista(), ordenarPorCancion() para que me ordene la tabla de canciones del HTML
+	- Elimine la funcion quitarArtista() que no andaba
+	- Agregue la funcion armandoListaDeReproduccion() para crear una lista de reproduccion de mis canciones
+
+Agregue los botones de "Ordenar generos", "Agregar genero", "Eliminar genero", "Agregar cancion", "Ordenar por artista", "Ordenar por cancion", "Ordenar por me gustas", "Me gusta", "Suscribirse" y "Guardar" 
+Agregue el script botones.js y conecte algunos de los botones a funciones ya hechas.
+Agregue dos input de busqueda y los conecte en el script botones.js para que reconozca la tecla enter.
+-----------------------------------------------------------------------
+Esta parte seria lo que he realizado sobre la clase 6
+
+
+
+
+
+-----------------------
+Pense en agregar el video correspondiente a cada cancion pero todavia no creo que pueda hacerlo.
+Creo que en vez de realizar una tabla tengo que generar cards, aunque no creo que pueda colocar de manera automática los videos. 
+Intentaré encontrarle la vuelta para la próxima entrega.
+-----------------------
