@@ -1,4 +1,4 @@
-Esta parte seria lo que he realizado sobre la clase 5
+Esta parte seria lo que he realizado con respecto a la clase 5
 -----------------------------------------------------------------------
 Separe el array genero (arrayGenero.js) del objeto canciones (canciones.js)
 
@@ -24,7 +24,7 @@ Agregue los botones de "Ordenar generos", "Agregar genero", "Eliminar genero", "
 Agregue el script botones.js y conecte algunos de los botones a funciones ya hechas.
 Agregue dos input de busqueda y los conecte en el script botones.js para que reconozca la tecla enter.
 -----------------------------------------------------------------------
-Esta parte seria lo que he realizado sobre la clase 6
+Esta parte seria lo que he realizado con respecto a la clase 6
 
 
 
