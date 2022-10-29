@@ -18,14 +18,20 @@ Modificaciones en canciones.js
 	- Cree las funciones armandoCardsCanciones(elemento) y cardsCanciones() para que genere un cards en el HTML con mis canciones.
 	- Modifique las funciones ordenarPormeGusta(), ordenarPorArtista(), ordenarPorCancion() para que me ordene mis cards de canciones del HTML
 	- Elimine la funcion quitarArtista() que no andaba
-	- Agregue la funcion armandoListaDeReproduccion() para crear una lista de reproduccion de mis canciones
+	- Agregue la funcion agregarListaDeReproduccion() para crear una lista de reproduccion de mis canciones
 
 Agregue los botones de "Ordenar generos", "Agregar genero", "Eliminar genero", "Agregar cancion", "Ordenar por artista", "Ordenar por cancion", "Ordenar por me gustas", "Me gusta", "Suscribirse" y "Guardar" 
 Agregue el script botones.js y conecte algunos de los botones a funciones ya hechas.
 Agregue dos input de busqueda y los conecte en el script botones.js para que reconozca la tecla enter.
 -----------------------------------------------------------------------
 Esta parte seria lo que he realizado con respecto a la clase 6
-Cree listaDeReproduccion.js para armar en ella una lista de reproduccion
+Cree la funcion activarBotonesLdr() para poder agregar canciones a una "lista de reproduccion"
+
+Agregue el script dom.js y le pase algunas funciones que tenia en canciones.js
+	- armandoCardsCanciones(elemento)
+	- activarBotonesLdr()
+	- cardsCanciones()
+	- agregarListaDeReproduccion(nombreCancion)
 
 
 
