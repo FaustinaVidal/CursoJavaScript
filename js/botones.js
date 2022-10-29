@@ -35,7 +35,7 @@ const btnOrdenarMeGustas = document.querySelector("button.ordenarMeGustas")
 
 btnOrdenarMeGustas.onclick = ordenarPormeGusta
 
-/*
+/* Estos botones seguramente los pase al js de canciones.js
 //-------------Me gusta-------------
 const btnMeGusta = document.querySelector("button.meGusta")
 
@@ -46,10 +46,11 @@ const btnSuscribirse = document.querySelector("button.suscribirse")
 
 btnSuscribirse.onclick = 
 
-//-------------Guardar-------------
-const btnGuardar = document.querySelector("button.guardar")
 
-btnGuardar.onclick = 
+//-------------Añadir a la lista-------------
+const btnAniadir = document.querySelector("button.aniadir")
+
+btnAniadir.onclick = 
 */
 
 //-------------INPUTS-------------

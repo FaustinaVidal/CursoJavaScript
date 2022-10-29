@@ -12,11 +12,11 @@ Modificaciones en contenido.js
 
 Modificaciones en canciones.js
 	- Cree la funcion meGusta() para que me diera un numero random
-	- Agregue el atributo meGusta a la funcion generadorAutomatico() y agregarCancion()
+	- Agregue el atributo meGusta a la funcion generadorAutomatico() y agregarCancion() 
 	- Agregue la funcion ordenarPormeGusta()
 	- Cree la funcion felicionPormeGusta() para que felicite la cancion cuando llegue a i meGusta.
-	- Cree las funciones armandoTablaCanciones(elemento) y tablaCanciones() para que genere una tabla en el HTML con mis canciones.
-	- Modifique las funciones ordenarPormeGusta(), ordenarPorArtista(), ordenarPorCancion() para que me ordene la tabla de canciones del HTML
+	- Cree las funciones armandoCardsCanciones(elemento) y cardsCanciones() para que genere un cards en el HTML con mis canciones.
+	- Modifique las funciones ordenarPormeGusta(), ordenarPorArtista(), ordenarPorCancion() para que me ordene mis cards de canciones del HTML
 	- Elimine la funcion quitarArtista() que no andaba
 	- Agregue la funcion armandoListaDeReproduccion() para crear una lista de reproduccion de mis canciones
 
@@ -25,13 +25,9 @@ Agregue el script botones.js y conecte algunos de los botones a funciones ya hec
 Agregue dos input de busqueda y los conecte en el script botones.js para que reconozca la tecla enter.
 -----------------------------------------------------------------------
 Esta parte seria lo que he realizado con respecto a la clase 6
+Cree listaDeReproduccion.js para armar en ella una lista de reproduccion
 
 
 
 
 
------------------------
-Pense en agregar el video correspondiente a cada cancion pero todavia no creo que pueda hacerlo.
-Creo que en vez de realizar una tabla tengo que generar cards, aunque no creo que pueda colocar de manera automática los videos. 
-Intentaré encontrarle la vuelta para la próxima entrega.
------------------------
