@@ -57,7 +57,23 @@ const agregarListaDeReproduccion = (nombreCancion) => {
     let resultado = canciones.find(elemento => elemento.cancion === nombreCancion)
     if (resultado !== undefined) {
         listaDeReproduccion.push(resultado)
-        console.clear()
-        console.table(listaDeReproduccion)
+        guardarListaDeReproduccion()
     }
 }
+
+//---
+//Guardando tu lista de reproduccion
+const guardarListaDeReproduccion = () => {
+    if (listaDeReproduccion.length > 0) {
+        (localStorage.setItem("listaDeReproduccion", JSON.stringify(listaDeReproduccion)))
+    }
+}
+
+const recuperarListaDeReproduccion = () => {
+    if (localStorage.getItem("listaDeReproduccion")) {
+        let listaDeReproduccionRecuperada = JSON.parse(localStorage.getItem("listaDeReproduccion"))
+            listaDeReproduccionRecuperada.forEach(cancion => listaDeReproduccion.push(cancion))
+    } else {
+        alert("No tienes una lista de reproduccion guardada")
+    }
+} 

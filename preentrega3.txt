@@ -33,6 +33,17 @@ Agregue el script dom.js y le pase algunas funciones que tenia en canciones.js
 	- cardsCanciones()
 	- agregarListaDeReproduccion(nombreCancion)
 
+Cree los html registro.html e iniciarSesion.html
+
+Para registro.html cree registro.js y dentro de registro.js 
+	- Cree la funcion almacenarDatos() y la hice funcionar con el boton de "Registrarme"
+------- Queria hacer una parte para registrarse y otra para iniciar sesion y que me recuerde el usuario y contraseña, pero no pude -------
+
+Modificaciones en canciones.js
+	- Agregue las funciones guardarListaDeReproduccion() y recuperarListaDeReproduccion()
+
+Modificaciones en botones.js
+	- Agregue un boton para poder recuperar la lista de reproduccion
 
 
 

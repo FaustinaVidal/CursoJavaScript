@@ -72,3 +72,9 @@ inputBuscarCanciones.addEventListener("keydown", (e) => {
         console.log("El usuario esta buscando una cancion")
     }
 })   
+
+//-------------Ver lista de reproducción-------------
+const btnRecuperarListaDeReproduccion = document.querySelector("button.recuperarListaDeReproduccion")
+
+btnRecuperarListaDeReproduccion.onclick = recuperarListaDeReproduccion
+
