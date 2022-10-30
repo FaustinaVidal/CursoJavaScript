@@ -45,6 +45,9 @@ Modificaciones en canciones.js
 Modificaciones en botones.js
 	- Agregue un boton para poder recuperar la lista de reproduccion
 
+-----------------
+Por ultimo estaba queriendo agregar una especie de filtros por genero, pero no pude terminarlo
+
 
 
 

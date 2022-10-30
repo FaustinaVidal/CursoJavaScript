@@ -1,9 +1,5 @@
-//Pongo esto aqui por si lo necesito mas adelante
-const titulo = document.querySelector("h2#titulo")
-
-const listaDeGeneros = document.querySelector("ul")
-
 //---
+
 const generos = ["Rap", "Blues", "Electronica", "Reggae", "Disco"]
 
 function recorrerGeneros() {
@@ -11,7 +7,7 @@ function recorrerGeneros() {
         console.log(elemento)
     }
 }
-
+/*
 function mostrarGeneros() {
     listaDeGeneros.innerHTML = ""
     generos.forEach (genero => {
@@ -20,7 +16,7 @@ function mostrarGeneros() {
 }
 
 mostrarGeneros()
-
+*/
 function ordenarGeneros() {
     generos.sort()
     mostrarGeneros()

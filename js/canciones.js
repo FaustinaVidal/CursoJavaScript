@@ -3,14 +3,14 @@ const listarCanciones = () => {
 }
 
 const agregarCancion = () => {
-    let numero = "NaN"
+    let genero = prompt("Ingrese el genero de la canción que desea agregar:").trim()
     let artista = prompt("Ingrese el nombre del artista de la canción que desea agregar:").trim()
     let cancion = prompt("Ingrese el nombre de la canción que desea agregar:").trim()
     let meGusta = 0
     let video = prompt("Ingrese el codigo del video de la canción que desea agregar:").trim()
 
     if ((artista.length > 0) && (cancion.length > 0) && (video.length > 0)) {
-        canciones.push(new Contenido(numero, artista, cancion, meGusta))
+        canciones.push(new Contenido(genero, artista, cancion, meGusta))
         cardsCanciones()
     } else {
         console.warn("Por favor, agrega una canción")

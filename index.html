@@ -12,6 +12,7 @@
     <script defer src="./js/arrayGenero.js"></script>
     <script defer src="./js/canciones.js"></script>
     <script defer src="./js/dom.js"></script>
+    <script defer src="./js/genero.js"></script>
     <script defer src="./js/botones.js"></script>
 </head>
 
@@ -40,7 +41,19 @@
 
     </div>
 
+
+<br><br><br><br><br><br>
     <div>
+        <select id="genero">
+            <option selected disabled>Elije un genero</option>
+        </select>
+        <button class="buscarPorGenero">Buscar</button>
+        <div id="cancionesPorGenero"></div>
+    </div>
+
+<br><br><br><br><br><br>
+
+<div>
         <div>
             <input class="buscarCanciones" type="search" placeholder="Qué quieres escuchar?...">
             <button class="agregarCancion">Agregar cancion</button>

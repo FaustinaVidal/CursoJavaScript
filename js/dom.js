@@ -18,7 +18,7 @@ function armandoCardsCanciones(elemento) {
                     <button class="meGusta" id="btnMeGusta${elemento.cancion}" title="Click para darle me gusta a ${elemento.cancion}.">
                         👍🏻 Me gusta
                     </button>
-                    <button class="suscribirse" id="btnSuscribirse${elemento.numero}" title="Click para suscribirte al canal de ${elemento.artista}.">
+                    <button class="suscribirse" id="btnSuscribirse${elemento.genero}" title="Click para suscribirte al canal de ${elemento.artista}.">
                         🔔 Suscribirse
                     </button>
                     <button class="aniadir" id="${elemento.cancion}" title="Click para añadir ${elemento.cancion} a tu lista de reproducción.">

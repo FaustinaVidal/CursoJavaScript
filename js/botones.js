@@ -1,4 +1,5 @@
 //-------------BUTTONS-------------
+/*
 //-------------Ordenar generos-------------
 const btnOrdenarGeneros = document.querySelector("button.ordenarGeneros")
 
@@ -14,7 +15,7 @@ btnAgregarGenero.onclick = agregarGenero
 const btnEliminarGenero = document.querySelector("button.eliminarGenero")
 
 btnEliminarGenero.onclick = eliminarGenero
-
+*/
 //-------------Agregar cancion-------------
 const btnAgregarCancion = document.querySelector("button.agregarCancion")
 
