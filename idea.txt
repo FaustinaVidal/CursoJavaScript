@@ -1,0 +1,14 @@
+Mi idea es
+index.html  -> Iniciar sesion/registrarme
+		- al tocar c/boton salga distinto cartel
+		- Iniciar Sesion
+			- Nombre de usuario
+			- Contrasenia
+		- Registrarme 
+			- Nombre Completo
+			- Correo electronico
+			- Numero de telefono
+			- Nombre de usuario
+			- Contrasenia
+tienda.html -> ropa para vender, carrito, etc
+musica.html -> canciones que se puedan ordenar

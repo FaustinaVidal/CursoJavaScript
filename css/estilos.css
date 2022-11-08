@@ -8,14 +8,16 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
     background-image: url(../img/Bejo_fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
     color: black;
+    font-weight: bold;
 }
 
 main {
     margin-top: 100px;
-    min-height: 63vh;
+    min-height: 67vh;
 }
 
 a {
@@ -25,7 +27,7 @@ a {
 
 /*Header*/
 header {
-    background-color: rgba(255, 255, 255, 0.082);
+    background-color: rgba(255, 255, 255, 0.493);
     color: black;
     position: fixed;
     width: 100%;
@@ -92,14 +94,21 @@ header {
     color: rgb(255, 0, 212);
 }
 
+/*TITULO*/
+.titulo {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
 /*Footer*/
 .footer {
-    background-color: rgba(255, 255, 255, 0.082);
+    background-color: rgba(255, 255, 255, 0.493);
     color: black;
     padding: 1rem 1rem;
     margin-top: 1rem;
     font-weight: bold;
-    max-height: 7rem;
 }
 
 .footer__texto {
@@ -126,3 +135,133 @@ header {
 .footer__icono:hover {
     color: rgb(255, 0, 212);
 }
+
+
+/*-------------------------------------------------------------*/
+/*index.html*/
+/*Formulario*/
+.formulario{
+    text-align: center;
+    margin-left: 2rem;
+}
+.formulario__cuadro{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formulario__texto{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.formulario__boton{
+    border-radius: 10px;
+    color: white;
+    background-color: #0F5897;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+}
+
+.formulario__boton:hover {
+    animation-name: animacionAlTocar;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animacionAlTocar {
+    100% {
+        background-color: rgb(255, 0, 212);
+    }
+}
+
+/*musica.html*/
+.tarjetaMusica{
+    background-color: white;
+    width: 530px;
+    height: 400px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+}
+.tarjetaMusica__video{
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.tarjetaMusica__texto{
+    text-align: justify;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+.tarjetaMusica__meGustas{
+    text-align: justify;
+    text-align: center;
+    font-size: 14px;
+}
+.tarjetaMusica__boton{
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
+.tarjetaMusica__boton:hover {
+    animation-name: animacionAlTocar;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+
+/*tienda.html*/
+
+.tarjetas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjetaTienda{
+    background-color: white;
+    width: 300px;
+    height: 380px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+}
+.tarjetaTienda__img{
+    width: 250px;
+    height: 250px;
+}
+.tarjetaTienda__texto{
+    text-align: justify;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+.tarjetaTienda__boton{
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
+.tarjetaTienda__boton:hover {
+    animation-name: animacionAlTocar;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
