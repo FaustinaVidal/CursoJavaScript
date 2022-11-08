@@ -4,7 +4,7 @@ const listaDeReproduccion = []
 
 //---
 function armandoCardsCanciones(elemento) {
-    return `<div class="col-12 col-md-4 mobile--centrar">
+    return `<div class="col-6">
                 <div data-aos="zoom-in-up">
                     <div class="card" style="width: 30rem;">
                         <div>

@@ -56,6 +56,7 @@ btnAniadir.onclick =
 
 //-------------INPUTS-------------
 //-------------generos-------------
+/*
 const inputBuscarGenero = document.querySelector("input.buscarGenero")
 
 inputBuscarGenero.addEventListener("keydown", (e) => {
@@ -63,7 +64,7 @@ inputBuscarGenero.addEventListener("keydown", (e) => {
         console.log("El usuario esta buscando un genero")
     }
 })   
-
+*/
 //-------------canciones-------------
 
 const inputBuscarCanciones = document.querySelector("input.buscarCanciones")
@@ -75,7 +76,7 @@ inputBuscarCanciones.addEventListener("keydown", (e) => {
 })   
 
 //-------------Ver lista de reproducción-------------
-const btnRecuperarListaDeReproduccion = document.querySelector("button.recuperarListaDeReproduccion")
+const btnRecuperarListaDeReproduccion = document.querySelector("button.recuperandoListaDeReproduccion")
 
-btnRecuperarListaDeReproduccion.onclick = recuperarListaDeReproduccion
+btnRecuperarListaDeReproduccion.addEventListener("click",recuperarListaDeReproduccion)
 

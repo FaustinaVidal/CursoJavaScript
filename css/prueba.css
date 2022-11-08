@@ -1,0 +1,9 @@
+.card__img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.card__espacio {
+    padding: 2rem;
+}

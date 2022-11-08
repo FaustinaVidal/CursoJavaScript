@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Musica</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono-->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <!--js-->
+    <script defer src="./js/mainMusica.js"></script>
+    <!--
+    <script src="./js/contenido.js"></script>
+    <script defer src="../js/arrayGenero.js"></script>
+    <script defer src="../js/canciones.js"></script>
+    <script defer src="../js/dom.js"></script>
+    <script defer src="../js/genero.js"></script>
+    <script defer src="../js/botones.js"></script>
+    <script src="../js/otro.js"></script>
+    -->
+    <!--css-->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <header id="headerMusica"></header>
+    
+    <main>
+        <div>
+            <h2 id="titulo">
+                Musika
+            </h2>
+            <p>
+                Mi idea por el momento es realizar una página para escuchar música. Aún no tengo muy claro como hacerlo,
+                pero
+                cree algunas funciones que creo que van a poder ayudarme.
+            </p>
+        </div>
+        <!--Generos-->
+        <!--
+        <div>
+            <div>
+                <input class="buscarGenero" type="search" placeholder="Qué genero buscas?...">
+                <button class="ordenarGeneros">Ordenar generos</button>
+                <button class="agregarGenero">Agregar genero</button>
+                <button class="eliminarGenero">Eliminar genero</button>
+            </div>
+            <ul id="genero">
+
+            </ul>
+
+        </div>
+        -->
+        <div>
+            <select id="genero">
+                <option selected disabled>Elije un genero</option>
+            </select>
+            <button class="buscarPorGenero">Buscar</button>
+            <div id="cancionesPorGenero"></div>
+        </div>
+
+        <div>
+            <div>
+                <input class="buscarCanciones" type="search" placeholder="Qué quieres escuchar?...">
+                <button class="agregarCancion">Agregar cancion</button>
+                <button class="ordenarArtistas">Ordenar por artista</button>
+                <button class="ordenarCanciones">Ordenar por cancion</button>
+                <button class="ordenarMeGustas">Ordenar por me gustas</button>
+                <button class="recuperandoListaDeReproduccion">Ver lista de reproducción</button>
+            </div>
+            <!--Canciones-->
+            <div class="container text-center">
+                <div class="row row-cols-2">
+
+                </div>
+            </div>
+    </main>
+    <footer class="footer" id="footerMusica"></footer>
+
+
+</body>
+
+</html>
