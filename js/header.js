@@ -11,7 +11,7 @@ return `<a href="./index.html">
                     <a class="navmenu__itemSeleccionado" href="./index.html">Inicio</a>
                 </li>
                 <li class="">
-                    <a class="navmenu__item" href="./pages/musica.html">Musica</a>
+                    <a class="navmenu__item" href="./pages/musica.html">Música</a>
                 </li>
                 <li class="">
                     <a class="navmenu__item" href="./pages/tienda.html">Tienda</a>

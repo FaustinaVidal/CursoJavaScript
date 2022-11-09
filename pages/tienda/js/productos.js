@@ -1,6 +1,8 @@
 const btnOrdenarPrecio = document.querySelector("button#ordenarProductosPrecio")
+const btnOrdenarPrecioInverso = document.querySelector("button#ordenarProductosPrecio")
 const btnOrdenarProductos = document.querySelector("button#ordenarProductosNombre")
-const btnBuscarProducto = document.querySelector("button#buscarProducto")
+const btnOrdenarProductosInverso = document.querySelector("button#ordenarProductosNombre")
+//const btnBuscarProducto = document.querySelector("button#buscarProducto")
 
 //-------------Ordenar por Precio-------------
 function ordenarPorPrecio() {
@@ -17,7 +19,13 @@ function ordenarPorPrecio() {
 }
 
 btnOrdenarPrecio.onclick = ordenarPorPrecio
+//-------------Ordenar por Precio Inverso-------------
+function ordenarPorPrecioInverso() {
+    productos.reverse().precio
+    colocandoTarjetasTienda()
+}
 
+btnOrdenarPrecioInverso.addEventListener("dblclick",ordenarPorPrecioInverso)
 //-------------Ordenar por nombre-------------
 function ordenarPorProducto() {
     productos.sort((elementa, elementb) => {
@@ -33,7 +41,13 @@ function ordenarPorProducto() {
 }
 
 btnOrdenarProductos.onclick = ordenarPorProducto
+//-------------Ordenar por nombre Inverso-------------
+function ordenarPorProductoInverso() {
+    productos.reverse().nombre
+    colocandoTarjetasTienda()
+}
 
+btnOrdenarProductosInverso.addEventListener("dblclick",ordenarPorProductoInverso)
 //-------------Buscar por nombre-------------
 /*
 function filtrarCancion() {

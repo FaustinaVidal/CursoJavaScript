@@ -188,6 +188,7 @@ header {
 
 .listaPaises {
     list-style: none;
+    text-align: center;
 }
 .pais {
     margin: 5px;

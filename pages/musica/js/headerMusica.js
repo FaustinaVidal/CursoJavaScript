@@ -10,7 +10,7 @@ function armandoHeaderMusica() {
                         <a class="navmenu__item" href="../index.html">Inicio</a>
                     </li>
                     <li class="">
-                        <a class="navmenu__itemSeleccionado" href="./musica.html">Musica</a>
+                        <a class="navmenu__itemSeleccionado" href="./musica.html">Música</a>
                     </li>
                     <li class="">
                         <a class="navmenu__item" href="./tienda.html">Tienda</a>

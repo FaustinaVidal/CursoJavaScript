@@ -1,5 +1,10 @@
 const btnOrdenarMeGustas = document.querySelector("button#ordenarCancionesMg")
+
+const btnOrdenarMeGustasInverso = document.querySelector("button#ordenarCancionesMg")
+
 const btnOrdenarCanciones = document.querySelector("button#ordenarCancionesNombre")
+
+const btnOrdenarCancionesInverso = document.querySelector("button#ordenarCancionesNombre")
 
 //-------------Ordenar por me gustas-------------
 function ordenarPormeGusta() {
@@ -16,7 +21,13 @@ function ordenarPormeGusta() {
 }
 
 btnOrdenarMeGustas.onclick = ordenarPormeGusta
+//-------------Ordenar por me gustas inverso-------------
+function ordenarPormeGustaInverso() {
+    canciones.reverse().meGusta
+    colocandoTarjetasMusica()
+}
 
+btnOrdenarMeGustasInverso.addEventListener("dblclick",ordenarPormeGustaInverso)
 //-------------Ordenar por nombre-------------
 function ordenarPorCancion() {
     canciones.sort((elementa, elementb) => {
@@ -32,4 +43,10 @@ function ordenarPorCancion() {
 }
 
 btnOrdenarCanciones.onclick = ordenarPorCancion
+//-------------Ordenar por nombre inverso-------------
+function ordenarPorCancionInverso() {
+    canciones.reverse().cancion
+    colocandoTarjetasMusica()
+}
 
+btnOrdenarCancionesInverso.addEventListener("dblclick",ordenarPorCancionInverso)

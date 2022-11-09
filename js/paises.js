@@ -1,14 +1,21 @@
 const btnOrdenarPaises = document.querySelector("button#ordenarPorPais")
+const btnOrdenarPaisesInverso = document.querySelector("button#ordenarPorPais")
 const btnAgregarPaises = document.querySelector("button#agregarUnPais")
 
 //-------------Ordenar paises-------------
 function ordenarPaises() {
     paises.sort()
-    armandoListaPaises()
+    colocandoListaPaises()
 }
 
 btnOrdenarPaises.onclick = ordenarPaises
+//-------------Ordenar paises inverso-------------
+function ordenarPaisesInveso() {
+    paises.reverse()
+    colocandoListaPaises()
+}
 
+btnOrdenarPaisesInverso.addEventListener("dblclick",ordenarPaisesInveso)
 //-------------Agregar paises-------------
 function agregarPais() {
     let nuevoPais = prompt("¿Que pais deseas agregar a nuestra gira?").trim()
@@ -19,7 +26,7 @@ function agregarPais() {
         }
     } else {
         paises.push(nuevoPais)
-        armandoListaPaises()
+        colocandoListaPaises()
     }
 }
 
