@@ -2,7 +2,6 @@ const btnOrdenarPrecio = document.querySelector("button#ordenarProductosPrecio")
 const btnOrdenarPrecioInverso = document.querySelector("button#ordenarProductosPrecio")
 const btnOrdenarProductos = document.querySelector("button#ordenarProductosNombre")
 const btnOrdenarProductosInverso = document.querySelector("button#ordenarProductosNombre")
-//const btnBuscarProducto = document.querySelector("button#buscarProducto")
 
 //-------------Ordenar por Precio-------------
 function ordenarPorPrecio() {
@@ -48,16 +47,4 @@ function ordenarPorProductoInverso() {
 }
 
 btnOrdenarProductosInverso.addEventListener("dblclick",ordenarPorProductoInverso)
-//-------------Buscar por nombre-------------
-/*
-function filtrarCancion() {
-    let buscar = prompt("Que canción quieres escuchar hoy?")
-    let resultado = productos.filter(elemento => elemento.producto.includes(buscar))
-    if (productos.some(elemento => elemento.producto.includes(buscar))) {
-        
-    } else {
-        console.warn("No se encontro esa cancion")
-    }
-}
-*/
-//btnBuscarProducto.onclick = filtrarProductos
+

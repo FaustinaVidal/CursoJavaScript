@@ -1,23 +1,24 @@
 const tarjetasTienda = document.querySelector("section#tienda__tarjetas")//main
 
-function armandoTarjetasTienda(elemento) {
+const armandoTarjetasTienda = (elemento) => {
     return `<article>
                 <div class="tarjetaTienda">
-                    <img class="tarjetaTienda__img" src="./tienda/img/${elemento.imagen}.jpg" alt="">
-                    <p class="tarjetaTienda__texto">${elemento.nombre}</p>
+                    <img class="tarjetaTienda__img" src="./tienda/img/${elemento.imagen}.jpg" loading="lazy" alt="${elemento.producto}">
+                    <p id="productoNombre" class="tarjetaTienda__texto">${elemento.nombre}</p>
                     <p>$ ${elemento.precio}</p>
-                    <button class="tarjetaTienda__boton">Añadir al carrito ➕</button>
+                    <button class="tarjetaTienda__boton aniadirAlCarrito" id="${elemento.nombre}">Añadir al carrito ➕</button>
                 </div>
             </article>`
 }
 
-function colocandoTarjetasTienda() {
+const colocandoTarjetasTienda = () => {
     tarjetasTienda.innerHTML = ""
     if (productos.length > 0) {
         productos.forEach(elemento => {
             tarjetasTienda.innerHTML += armandoTarjetasTienda(elemento)
         })
     }
+    activarBtnAniadirAlCarrito()
 }
 
 colocandoTarjetasTienda()

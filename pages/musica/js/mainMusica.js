@@ -1,6 +1,6 @@
 const tarjetasMusica = document.querySelector("section#musica__tarjetas")//main
 
-function armandoTarjetasMusica(elemento) {
+const armandoTarjetasMusica = (elemento) => {
     return `<article>
                 <div class="tarjetaMusica">
                     <iframe class="tarjetaMusica__video" width="500" height="255" src="https://www.youtube.com/embed/${elemento.video}"
@@ -13,7 +13,7 @@ function armandoTarjetasMusica(elemento) {
             </article>`
 }
 
-function colocandoTarjetasMusica() {
+const colocandoTarjetasMusica = () => {
     tarjetasMusica.innerHTML = ""
     if (canciones.length > 0) {
         canciones.forEach(elemento => {

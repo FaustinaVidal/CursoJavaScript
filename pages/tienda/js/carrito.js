@@ -1,12 +1,25 @@
-//veremos
-/*
-function generarCarrito() {
-    carrito.push(new Producto(1234, "NOTEBOOK EXO E17", 29950))
-    carrito.push(new Producto(2345, "MACBOOK AIR 13", 249900))
-    carrito.push(new Producto(3456, "LENOVO IDEAPAD 13", 199949))
-}
-generarCarrito()
+const carrito = []
 
+//llamo la siguiente funcion en mainTienda.js, funcion colocandoTarjetasTienda()
+const activarBtnAniadirAlCarrito = () => {
+    const btnAniadirAlCarrito = document.querySelectorAll("button.aniadirAlCarrito")
+    btnAniadirAlCarrito.forEach(btn => {
+        btn.addEventListener("click", () => { 
+            aniadirAlCarrito(btn.id) 
+        })
+    })
+}
+
+const aniadirAlCarrito = (nombre) => {
+    let resultado = productos.find(product => product.nombre === nombre)
+        if (resultado !== undefined) {
+            carrito.push(resultado)
+            console.clear()
+            console.table(carrito) //aca tengo que poner una funcion pa que nos muestre el carrito
+        }
+}
+
+/*
 function totalCarrito() {
     //debugger
     let total = carrito.reduce((acc, elemento)=> acc + (elemento.importe * elemento.cantidad), 0)
