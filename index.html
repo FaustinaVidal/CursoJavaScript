@@ -6,8 +6,9 @@
     <title>Bejismo</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Icono-->
+    <!--Iconos-->
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="shortcut icon" href="./img/Bejo.jpg" type="image/x-icon">
     <!--js-->
     <script defer src="./js/arrayPaises.js"></script>
     <script defer src="./js/header.js"></script>
@@ -24,24 +25,26 @@
     <main>
         <h1 class="titulo">WELCOME</h1>
         <section class="section__index">
-            <article>
-                <form class="formulario">
-                    <fieldset class="formulario__cuadro">
-                        <legend class="formulario__texto">¿Ya tienes una cuenta?</legend>
-                        <button class="formulario__boton">Iniciar Sesión</button>
-                        <button class="formulario__boton">Registrarme</button>
-                    </fieldset>
-                </form>
+            <article class="cuenta">
+                <fieldset class="cuenta__cuadro">
+                    <legend class="cuenta__texto">¿Ya tienes una cuenta?</legend>
+                    <a href="./pages/iniciarSesion.html">
+                        <button class="cuenta__boton">Iniciar Sesión</button>
+                    </a>
+                    <a href="./pages/registrarme.html">
+                        <button class="cuenta__boton">Registrarme</button>
+                    </a>
+                </fieldset>
             </article>
             <article>
-                <fieldset class="formulario__cuadro">
-                    <legend class="formulario__texto">Proxima gira:</legend>
+                <fieldset class="cuenta__cuadro">
+                    <legend class="cuenta__texto">Proxima gira:</legend>
                     <ul class="listaPaises" id="listaDePaises"></ul>
                     <p>¿Tu pais no está en la lista?</p>
                     <p>Agregalo para que podamos sumarlo a la gira!</p>
                     <div>
-                        <button class="formulario__boton" id="ordenarPorPais">Ordenar paises</button>
-                        <button class="formulario__boton" id="agregarUnPais">Agregar pais</button>
+                        <button class="cuenta__boton" id="ordenarPorPais">Ordenar paises</button>
+                        <button class="cuenta__boton" id="agregarUnPais">Agregar pais</button>
                     </div>
                 </fieldset>
             </article>

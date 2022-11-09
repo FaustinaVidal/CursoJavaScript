@@ -4,19 +4,20 @@ const carrito = []
 const activarBtnAniadirAlCarrito = () => {
     const btnAniadirAlCarrito = document.querySelectorAll("button.aniadirAlCarrito")
     btnAniadirAlCarrito.forEach(btn => {
-        btn.addEventListener("click", () => { 
-            aniadirAlCarrito(btn.id) 
+        btn.addEventListener("click", () => {
+            aniadirAlCarrito(btn.id)
         })
     })
 }
 
+
 const aniadirAlCarrito = (nombre) => {
     let resultado = productos.find(product => product.nombre === nombre)
-        if (resultado !== undefined) {
-            carrito.push(resultado)
-            console.clear()
-            console.table(carrito) //aca tengo que poner una funcion pa que nos muestre el carrito
-        }
+    if (resultado !== undefined) {
+        carrito.push(resultado)
+        console.clear()
+        console.table(carrito) //aca tengo que poner una funcion pa que nos muestre el carrito
+    }
 }
 
 /*

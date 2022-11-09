@@ -145,11 +145,11 @@ header {
     justify-content: space-between;
     padding: 20px 40px 20px 40px;
 }
-/*Formulario*/
-.formulario{
+/*Tarjeta de cuenta*/
+.cuenta{
     text-align: center;
 }
-.formulario__cuadro{
+.cuenta__cuadro{
     background-color: rgba(255, 255, 255, 0.212);
     width: 400px;
     height: 400px;
@@ -160,13 +160,13 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.formulario__texto{
+.cuenta__texto{
     text-align: center;
     font-size: 25px;
     font-weight: bold;
 }
 
-.formulario__boton{
+.cuenta__boton{
     border-radius: 10px;
     color: white;
     background-color: #0F5897;
@@ -174,7 +174,7 @@ header {
     text-align: center;
 }
 
-.formulario__boton:hover {
+.cuenta__boton:hover {
     animation-name: animacionAlTocar;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
@@ -303,4 +303,68 @@ header {
     animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
-::placeholder { color: white; }
+::placeholder {
+    color: white;
+}
+/*registrarme.html e iniciarSesion.html*/
+.botonBack{
+    border-radius: 50%;
+    color: black;
+    background-color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    margin-left: 40px;
+    text-align: center;
+    
+}
+
+.botonBack:hover {
+    animation-name: animacionAlTocar;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.section__formulario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px 20px 40px;
+}
+
+.formulario{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.formulario__texto{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.formulario__boton{
+    border-radius: 10px;
+    color: white;
+    background-color: #0F5897;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+}
+
+.formulario__boton:hover {
+    animation-name: animacionAlTocar;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animacionAlTocar {
+    100% {
+        background-color: rgb(255, 0, 212);
+    }
+}
