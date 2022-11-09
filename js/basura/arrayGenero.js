@@ -1,5 +1,5 @@
 //---
-
+/*
 const generos = ["Rap", "Blues", "Electronica", "Reggae", "Disco"]
 
 function recorrerGeneros() {
@@ -7,7 +7,7 @@ function recorrerGeneros() {
         console.log(elemento)
     }
 }
-/*
+
 function mostrarGeneros() {
     listaDeGeneros.innerHTML = ""
     generos.forEach (genero => {
@@ -17,11 +17,12 @@ function mostrarGeneros() {
 
 mostrarGeneros()
 */
+
 function ordenarGeneros() {
     generos.sort()
     mostrarGeneros()
 }
-
+/*
 function agregarGenero() {
     let nuevoGenero = prompt("Que genero deseas agregar?").trim()
     if (generos.includes(nuevoGenero) && nuevoGenero.length > 0) {
@@ -46,8 +47,7 @@ function eliminarGenero() {
             eliminarGenero()
         }
 }
-
-
+*/
 function buscarGenero() {
     let buscar = prompt("Cual es el genero que deseas buscar?")
     let resultado = generos.find(elemento => elemento.includes(buscar))

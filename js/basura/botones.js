@@ -17,26 +17,19 @@ const btnEliminarGenero = document.querySelector("button.eliminarGenero")
 btnEliminarGenero.onclick = eliminarGenero
 */
 //-------------Agregar cancion-------------
+/*
 const btnAgregarCancion = document.querySelector("button.agregarCancion")
 
 btnAgregarCancion.onclick = agregarCancion
+*/
 
 //-------------Ordenar por artista-------------
+/*
 const btnOrdenarArtistas = document.querySelector("button.ordenarArtistas")
 
 btnOrdenarArtistas.onclick = ordenarPorArtista
-
-//-------------Ordenar por cancion-------------
-const btnOrdenarCanciones = document.querySelector("button.ordenarCanciones")
-
-btnOrdenarCanciones.onclick = ordenarPorCancion
-
-//-------------Ordenar por me gustas-------------
-const btnOrdenarMeGustas = document.querySelector("button.ordenarMeGustas")
-
-btnOrdenarMeGustas.onclick = ordenarPormeGusta
-
-/* Estos botones seguramente los pase al js de canciones.js
+*/
+/*
 //-------------Me gusta-------------
 const btnMeGusta = document.querySelector("button.meGusta")
 
@@ -49,6 +42,7 @@ btnSuscribirse.onclick =
 
 
 //-------------Añadir a la lista-------------
+
 const btnAniadir = document.querySelector("button.aniadir")
 
 btnAniadir.onclick = 

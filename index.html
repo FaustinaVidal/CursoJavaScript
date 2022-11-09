@@ -9,8 +9,11 @@
     <!--Icono-->
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <!--js-->
-    <script defer src="./js/main.js"></script>
+    <script defer src="./js/arrayPaises.js"></script>
+    <script defer src="./js/header.js"></script>
     <script defer src="./js/footer.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/paises.js"></script>
     <!--css-->
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
@@ -20,16 +23,29 @@
 
     <main>
         <h1 class="titulo">WELCOME</h1>
-        <form class="formulario">
-            <fieldset class="formulario__cuadro">
-                <legend class="formulario__texto">Ya tienes una cuenta?</legend>
-                <button class="formulario__boton">Iniciar Sesión</button>
-                <button class="formulario__boton">Registrarme</button>
-            </fieldset>
-        </form>
-
-
-
+        <section class="section__index">
+            <article>
+                <form class="formulario">
+                    <fieldset class="formulario__cuadro">
+                        <legend class="formulario__texto">¿Ya tienes una cuenta?</legend>
+                        <button class="formulario__boton">Iniciar Sesión</button>
+                        <button class="formulario__boton">Registrarme</button>
+                    </fieldset>
+                </form>
+            </article>
+            <article>
+                <fieldset class="formulario__cuadro">
+                    <legend class="formulario__texto">Proxima gira:</legend>
+                    <ul class="listaPaises" id="listaDePaises"></ul>
+                    <p>¿Tu pais no está en la lista?</p>
+                    <p>Agregalo para que podamos sumarlo a la gira!</p>
+                    <div>
+                        <button class="formulario__boton" id="ordenarPorPais">Ordenar paises</button>
+                        <button class="formulario__boton" id="agregarUnPais">Agregar pais</button>
+                    </div>
+                </fieldset>
+            </article>
+        </section>
     </main>
 
     <footer class="footer" id="footerInicio"></footer>

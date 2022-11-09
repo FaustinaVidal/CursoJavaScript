@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <!--js-->
     <script defer src="./musica/js/contenido.js"></script>
-    <script defer src="./musica/js/productos.js"></script>
+    <script defer src="./musica/js/generadorCanciones.js"></script>
     <script defer src="./musica/js/headerMusica.js"></script>
     <script defer src="../js/footer.js"></script>
     <script defer src="./musica/js/mainMusica.js"></script>
+    <script defer src="./musica/js/canciones.js"></script>
 
     <!--css-->
     <link rel="stylesheet" href="../css/estilos.css">
@@ -24,6 +25,10 @@
 
     <main>
         <h1 class="titulo">MUSIC</h1>
+        <div class="botonesOrden">
+            <button class="botonOrden" id="ordenarCancionesMg">Ordenar por me gustas</button>
+            <button class="botonOrden" id="ordenarCancionesNombre">Ordenar por nombre</button>
+        </div>
         <section class="tarjetas" id="musica__tarjetas">
         </section>
     </main>

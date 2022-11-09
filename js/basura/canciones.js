@@ -1,7 +1,9 @@
+/*
 const listarCanciones = () => {
     console.table(canciones)
 }
-
+*/
+/*
 const agregarCancion = () => {
     let genero = prompt("Ingrese el genero de la canción que desea agregar:").trim()
     let artista = prompt("Ingrese el nombre del artista de la canción que desea agregar:").trim()
@@ -17,8 +19,9 @@ const agregarCancion = () => {
         agregarCancion()
     }
 }
-
+*/
 //--
+/*
 function filtrarArtista() {
     let buscar = prompt("Que Artista quieres escuchar hoy?")
     let resultado = canciones.filter(elemento => elemento.artista.includes(buscar))
@@ -28,7 +31,7 @@ function filtrarArtista() {
         console.table(resultado)
     }
 }
-
+*/
 function filtrarCancion() {
     let buscar = prompt("Que canción quieres escuchar hoy?")
     let resultado = canciones.filter(elemento => elemento.cancion.includes(buscar))
@@ -40,6 +43,7 @@ function filtrarCancion() {
 }
 
 //--
+/*
 function ordenarPorArtista() {
     canciones.sort((a, b) => {
         if (a.artista > b.artista) {
@@ -52,34 +56,9 @@ function ordenarPorArtista() {
     })
     cardsCanciones()
 }
-
-function ordenarPorCancion() {
-    canciones.sort((a, b) => {
-        if (a.cancion > b.cancion) {
-            return 1
-        }
-        if (a.cancion < b.cancion) {
-            return -1
-        }
-        return 0
-    })
-    cardsCanciones()
-}
-
-function ordenarPormeGusta() {
-    let meGustaOrdenados = canciones.sort((a, b) => {
-        if (a.meGusta > b.meGusta) {
-            return 1
-        }
-        if (a.meGusta < b.meGusta) {
-            return -1
-        }
-        return 0
-    })
-    cardsCanciones()
-}
-
+*/
 //---
+
 function felicitacionPormeGusta() {
     for (let i = 1; i <= 10000; i = i * 10) {
         canciones.forEach(elemento => {
