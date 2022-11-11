@@ -1,29 +1,37 @@
 const carrito = []
 
 //llamo la siguiente funcion en mainTienda.js, funcion colocandoTarjetasTienda()
-const activarBtnAniadirAlCarrito = () => {
-    const btnAniadirAlCarrito = document.querySelectorAll("button.aniadirAlCarrito")
-    btnAniadirAlCarrito.forEach(btn => {
+const activarBtnAñadirAlCarrito = () => {
+    const btnAñadirAlCarrito = document.querySelectorAll("button.añadirAlCarrito")
+    btnAñadirAlCarrito.forEach(btn => {
         btn.addEventListener("click", () => {
-            aniadirAlCarrito(btn.id)
+            añadirAlCarrito(btn.id)
         })
     })
 }
 
 
-const aniadirAlCarrito = (nombre) => {
+const añadirAlCarrito = (nombre) => {
     let resultado = productos.find(product => product.nombre === nombre)
     if (resultado !== undefined) {
         carrito.push(resultado)
-        console.clear()
-        console.table(carrito) //aca tengo que poner una funcion pa que nos muestre el carrito
+        guardarCarrito()
     }
 }
 
-/*
-function totalCarrito() {
-    //debugger
-    let total = carrito.reduce((acc, elemento)=> acc + (elemento.importe * elemento.cantidad), 0)
-        console.log("El total del carrito es:", total)
+const guardarCarrito = () => {
+    if (carrito.length > 0) {
+        localStorage.setItem("carrito", JSON.stringify(carrito))
+    }
 }
-*/
+
+const recuperarCarrito = () => {
+    if(localStorage.getItem("carrito")) {
+        let carritoRecuperado = JSON.parse(localStorage.getItem("carrito"))
+            carritoRecuperado.forEach(producto => carrito.push(producto))
+    } else {
+        console.warn("No se encontro un carrito guardado")//Esto tengo que quitarlo!!
+    }
+}
+
+recuperarCarrito()
