@@ -12,6 +12,7 @@
     <!--js-->
     <script defer src="./cuenta/js/cuenta.js"></script>
     <script defer src="../js/footer.js"></script>
+    <script defer src="./cuenta/registrarme/js/registrarme.js"></script>
     <!--css-->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -27,25 +28,15 @@
         <section class="section__formulario">
             <form class="formulario">
                 <legend class="formulario__texto">Registrarme</legend>
-                <input class="formulario__boton" type="text" id="inputNombre" placeholder="Nombre completo">
-                <input class="formulario__boton" type="email" id="inputEmail" placeholder="Correo electrónico">
-                <input class="formulario__boton" type="tel" id="inputTelefono" placeholder="Número de teléfono">
-                <input class="formulario__boton" type="text" id="inputUsuario" placeholder="Usuario">
-                <input class="formulario__boton" type="password" name="" id="inputContraseña" placeholder="Contraseña">
-                <button class="formulario__boton" id="registrarme">Registrarme</button>
+                <input required class="formulario__boton" id="inputNombre" type="text" placeholder="Nombre completo">
+                <input required class="formulario__boton" id="inputEmail" type="email" placeholder="Correo electrónico">
+                <input required class="formulario__boton" id="inputTelefono" type="tel" placeholder="Número de teléfono">
+                <input required class="formulario__boton" id="inputUsuario" type="text" placeholder="Usuario">
+                <input required class="formulario__boton" id="inputContraseña" type="password" name="" placeholder="Contraseña">
+                <button class="formulario__boton" id="btnRegistrarme">Registrarme</button>
             </form>
         </section>
     </main>
-            <!--        <div class="formulario">
-            <h1>Registro</h1>
-            <input type="text" id="inputNombre" placeholder="Nombre completo">
-            <input type="email" id="inputEmail" placeholder="Correo electrónico">
-            <input type="tel" id="inputTelefono" placeholder="Número de teléfono">
-            <input type="text" id="inputUsuario" placeholder="Usuario">
-            <input type="password" name="" id="inputContraseña" placeholder="Contraseña">
-            <button class="registrarme">Registrarme</button>
-        </div>-->
-
 
     <footer class="footer" id="footerInicio"></footer>
 

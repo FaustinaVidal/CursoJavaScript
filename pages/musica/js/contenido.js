@@ -1,6 +1,6 @@
 const canciones = []
 
-const meGusta = () => parseInt(Math.random() * 10000)
+const meGusta = () => parseInt(Math.random() * 100000)
 
 class Contenido {
     constructor(artista, cancion, meGusta, video) {
