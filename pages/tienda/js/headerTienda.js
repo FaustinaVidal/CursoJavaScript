@@ -18,7 +18,6 @@ const armandoHeaderTienda = () => {
                 </ul>
             </nav>`
 }
-const colocandoHeaderTienda = () => {
-    headerTienda.innerHTML = armandoHeaderTienda()
-}
+const colocandoHeaderTienda = () => headerTienda.innerHTML = armandoHeaderTienda()
+
 colocandoHeaderTienda()

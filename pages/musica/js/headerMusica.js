@@ -19,8 +19,6 @@ const armandoHeaderMusica = () => {
             </nav>`
 }
 
-const colocandoHeaderMusica = () => {
-    headerMusica.innerHTML = armandoHeaderMusica()
-}
+const colocandoHeaderMusica = () => headerMusica.innerHTML = armandoHeaderMusica()
 
 colocandoHeaderMusica()

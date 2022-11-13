@@ -19,8 +19,6 @@ const armandoHeaderCuenta = () => {
             </nav>`
 }
 
-const colocandoHeaderCuenta = () => {
-    headerCuenta.innerHTML = armandoHeaderCuenta()
-}
+const colocandoHeaderCuenta = () => headerCuenta.innerHTML = armandoHeaderCuenta()
 
 colocandoHeaderCuenta()

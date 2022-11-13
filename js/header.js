@@ -20,9 +20,7 @@ return `<a href="./index.html">
         </nav>`
 }
 
-const colocandoHeaderInicio = () => {
-    headerInicio.innerHTML = armandoHeaderInicio()
-}
+const colocandoHeaderInicio = () => headerInicio.innerHTML = armandoHeaderInicio()
 
 colocandoHeaderInicio()
 

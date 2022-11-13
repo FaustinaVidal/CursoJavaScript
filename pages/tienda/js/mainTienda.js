@@ -13,9 +13,7 @@ const armandoTarjetasTienda = (elemento) => {
 
 const colocandoTarjetasTienda = () => {
     tarjetasTienda.innerHTML = ""
-    productos.length > 0 && productos.forEach(elemento => {
-        tarjetasTienda.innerHTML += armandoTarjetasTienda(elemento)
-    })
+    productos.length > 0 && productos.forEach(elemento => tarjetasTienda.innerHTML += armandoTarjetasTienda(elemento))
     activarBtnAñadirAlCarrito()
 }
 

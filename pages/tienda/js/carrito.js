@@ -4,9 +4,7 @@ const carrito = []
 const activarBtnAñadirAlCarrito = () => {
     const btnAñadirAlCarrito = document.querySelectorAll("button.añadirAlCarrito")
     btnAñadirAlCarrito.forEach(btn => {
-        btn.addEventListener("click", () => {
-            añadirAlCarrito(btn.id)
-        })
+        btn.addEventListener("click", () => añadirAlCarrito(btn.id))
     })
 }
 
@@ -19,14 +17,12 @@ const añadirAlCarrito = (nombre) => {
     }
 }
 
-const guardarCarrito = () => {
-    carrito.length > 0 && localStorage.setItem("carrito", JSON.stringify(carrito))
-}
+const guardarCarrito = () => carrito.length > 0 && localStorage.setItem("carrito", JSON.stringify(carrito))
 
 const recuperarCarrito = () => {
-    if(localStorage.getItem("carrito")) {
+    if (localStorage.getItem("carrito")) {
         let carritoRecuperado = JSON.parse(localStorage.getItem("carrito"))
-            carritoRecuperado.forEach(producto => carrito.push(producto))
+        carritoRecuperado.forEach(producto => carrito.push(producto))
     } else {
         carritoRecuperado = []
     }

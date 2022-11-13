@@ -23,8 +23,6 @@ const armandoFooterInicio = () => {
             </nav>`
 }
 
-const colocandoFooterInicio = () => {
-    footerInicio.innerHTML = armandoFooterInicio()
-}
+const colocandoFooterInicio = () => footerInicio.innerHTML = armandoFooterInicio()
 
 colocandoFooterInicio()
