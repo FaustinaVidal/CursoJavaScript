@@ -30,7 +30,7 @@ const recuperarCarrito = () => {
         let carritoRecuperado = JSON.parse(localStorage.getItem("carrito"))
             carritoRecuperado.forEach(producto => carrito.push(producto))
     } else {
-        console.warn("No se encontro un carrito guardado")//Esto tengo que quitarlo!!
+        carritoRecuperado = []
     }
 }
 

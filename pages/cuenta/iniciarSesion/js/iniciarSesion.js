@@ -4,11 +4,12 @@ const btnIniciarSesion = document.querySelector("button#btnIniciarSesion")
 
 const iniciarSesion = () => {
     if ((inputUsuario.value.trim() !== "") && (inputContraseña.value.trim() !== "")) {
-        localStorage.setItem("usuario",inputUsuario.value)
-        localStorage.setItem("contraseña",inputContraseña.value)
-
+        localStorage.setItem("usuario", inputUsuario.value)
+        localStorage.setItem("contraseña", inputContraseña.value)
     }
 }
+
+const datosCompletos = () => ((inputUsuario.value.trim() !== "") && (inputContraseña.value.trim() !== "")) ? true : false
 
 const recuperarDatosiniciarSesion = () => {
     if (localStorage.getItem("usuario")) {
@@ -18,15 +19,30 @@ const recuperarDatosiniciarSesion = () => {
 }
 
 const preguntarGuardarDatosIniciarSesion = () => {
-    let pregunta = confirm("¿Deseas que recuerde tu usuario y contraseña?")
-    if (pregunta) {
-        document.addEventListener("DOMContentLoaded",recuperarDatosiniciarSesion)
-        iniciarSesion()
+    if (datosCompletos()) {
+        let pregunta = confirm("¿Deseas que recuerde tu usuario y contraseña?")
+        if (pregunta) {
+            document.addEventListener("DOMContentLoaded", recuperarDatosiniciarSesion)
+            iniciarSesion()
+        } else {
+            iniciarSesion()
+            localStorage.removeItem("usuario")
+            localStorage.removeItem("contraseña")
+        }
     } else {
-        iniciarSesion()
-        localStorage.removeItem("usuario")
-        localStorage.removeItem("contraseña")
+        alert("⛔️ Debes llenar todos los datos en pantalla.")
     }
 }
+
+/*
+const realizarCotizacion = () => {
+    if (datosCompletos()) {
+        const coti = new Cotizador(costoM2, selectPropiedad.value, selectUbicacion.value, inputMetros2.value)
+        valorPoliza.innerText = coti.cotizarPoliza()
+        btnEnviar.classList.remove("ocultar")
+    } else {
+        alert("⛔️ Debes completar todos los datos en pantalla.")
+    }
+}*/
 
 btnIniciarSesion.addEventListener("click", preguntarGuardarDatosIniciarSesion)

@@ -1,4 +1,4 @@
-function generadorAutomaticoCanciones() {
+const generadorAutomaticoCanciones = () => {
     canciones.push(new Contenido("Bejo", "Helarte", meGusta(), "OJp4-wFOu3k"))
     canciones.push(new Contenido("Bejo", "A mi manera", meGusta(), "r9oNjUOS4pk"))
     canciones.push(new Contenido("Bejo", "Mentecato", meGusta(), "8DZtdiL-9EU"))

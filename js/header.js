@@ -1,7 +1,7 @@
 const headerInicio = document.querySelector("header#headerInicio")//header
 
 //HEADER
-function armandoHeaderInicio() {
+const armandoHeaderInicio = () => {
 return `<a href="./index.html">
             <img class="logo" src="./img/Bejo.jpg" alt="logo">
         </a>
@@ -20,7 +20,7 @@ return `<a href="./index.html">
         </nav>`
 }
 
-function colocandoHeaderInicio() {
+const colocandoHeaderInicio = () => {
     headerInicio.innerHTML = armandoHeaderInicio()
 }
 

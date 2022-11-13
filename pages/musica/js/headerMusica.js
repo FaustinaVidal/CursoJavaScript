@@ -1,6 +1,6 @@
 const headerMusica = document.querySelector("header#headerMusica")//header
 
-function armandoHeaderMusica() {
+const armandoHeaderMusica = () => {
     return `<a href="../index.html">
                 <img class="logo" src="../img/Bejo.jpg" alt="logo">
             </a>
@@ -19,7 +19,7 @@ function armandoHeaderMusica() {
             </nav>`
 }
 
-function colocandoHeaderMusica() {
+const colocandoHeaderMusica = () => {
     headerMusica.innerHTML = armandoHeaderMusica()
 }
 

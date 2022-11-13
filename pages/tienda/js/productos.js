@@ -4,7 +4,7 @@ const btnOrdenarProductos = document.querySelector("button#ordenarProductosNombr
 const btnOrdenarProductosInverso = document.querySelector("button#ordenarProductosNombre")
 
 //-------------Ordenar por Precio-------------
-function ordenarPorPrecio() {
+const ordenarPorPrecio = () => {
     productos.sort((elementa, elementb) => {
         if (elementa.precio > elementb.precio) {
             return 1
@@ -19,14 +19,14 @@ function ordenarPorPrecio() {
 
 btnOrdenarPrecio.onclick = ordenarPorPrecio
 //-------------Ordenar por Precio Inverso-------------
-function ordenarPorPrecioInverso() {
+const ordenarPorPrecioInverso = () => {
     productos.reverse().precio
     colocandoTarjetasTienda()
 }
 
 btnOrdenarPrecioInverso.addEventListener("dblclick",ordenarPorPrecioInverso)
 //-------------Ordenar por nombre-------------
-function ordenarPorProducto() {
+const ordenarPorProducto = () => {
     productos.sort((elementa, elementb) => {
         if (elementa.nombre > elementb.nombre) {
             return 1
@@ -41,7 +41,7 @@ function ordenarPorProducto() {
 
 btnOrdenarProductos.onclick = ordenarPorProducto
 //-------------Ordenar por nombre Inverso-------------
-function ordenarPorProductoInverso() {
+const ordenarPorProductoInverso = () => {
     productos.reverse().nombre
     colocandoTarjetasTienda()
 }

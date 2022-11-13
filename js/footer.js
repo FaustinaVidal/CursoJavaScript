@@ -1,6 +1,6 @@
 const footerInicio = document.querySelector("footer#footerInicio")//footer
 
-function armandoFooterInicio() {
+const armandoFooterInicio = () => {
     return `<p class="footer__texto">BEJO</p>
             <nav>
                 <ul class="footer__lista">
@@ -23,7 +23,7 @@ function armandoFooterInicio() {
             </nav>`
 }
 
-function colocandoFooterInicio() {
+const colocandoFooterInicio = () => {
     footerInicio.innerHTML = armandoFooterInicio()
 }
 

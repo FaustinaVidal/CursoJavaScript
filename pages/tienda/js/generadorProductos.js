@@ -1,4 +1,4 @@
-function generadorAutomaticoProductos() {
+const generadorAutomaticoProductos = () => {
     productos.push(new Productos("CALCETINES DIBEJO", "medias", 563.24, "medias01"))
     productos.push(new Productos("CALCETINES GRAFFITI", "medias", 563.24, "medias02"))
     productos.push(new Productos("CALCETINES HIPI HAPA", "medias", 563.24, "medias03"))

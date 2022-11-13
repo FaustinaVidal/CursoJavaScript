@@ -1,6 +1,6 @@
 const headerCuenta = document.querySelector("header#headerCuenta")//header
 
-function armandoHeaderCuenta() {
+const armandoHeaderCuenta = () => {
     return `<a href="../index.html">
                 <img class="logo" src="../img/Bejo.jpg" alt="logo">
             </a>
@@ -19,7 +19,7 @@ function armandoHeaderCuenta() {
             </nav>`
 }
 
-function colocandoHeaderCuenta() {
+const colocandoHeaderCuenta = () => {
     headerCuenta.innerHTML = armandoHeaderCuenta()
 }
 

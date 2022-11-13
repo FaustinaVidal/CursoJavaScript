@@ -1,6 +1,6 @@
 const headerTienda = document.querySelector("header#headerTienda")//header
 
-function armandoHeaderTienda() {
+const armandoHeaderTienda = () => {
     return `<a href="../index.html">
                 <img class="logo" src="../img/Bejo.jpg" alt="logo">
             </a>
@@ -18,7 +18,7 @@ function armandoHeaderTienda() {
                 </ul>
             </nav>`
 }
-function colocandoHeaderTienda() {
+const colocandoHeaderTienda = () => {
     headerTienda.innerHTML = armandoHeaderTienda()
 }
 colocandoHeaderTienda()
