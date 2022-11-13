@@ -16,7 +16,5 @@ function filtrarCancion() {
 //btnBuscarProducto.onclick = filtrarProductos
 //-------------Buscar cuando aprete enter-------------
 inputBuscarProducto.addEventListener("keydown", (e) => {
-    if (e.key === "Enter"){
-        console.log("aca iria mi funcion de buscar")
-    }
+    e.key === "Enter" && console.log("aca iria mi funcion de buscar")
 })

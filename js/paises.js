@@ -21,9 +21,7 @@ const agregarPais = () => {
     let nuevoPais = prompt("¿Que pais deseas agregar a nuestra gira?").trim()
     if (paises.includes(nuevoPais) && nuevoPais.length > 0) {
         respuesta = confirm(nuevoPais + " ya esta incluido en la gira ¿Quieres agregar otro pais?")
-        if (respuesta) {
-            agregarPais()
-        }
+        respuesta && agregarPais()
     } else {
         paises.push(nuevoPais)
         colocandoListaPaises()

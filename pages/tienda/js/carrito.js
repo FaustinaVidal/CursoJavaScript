@@ -20,9 +20,7 @@ const añadirAlCarrito = (nombre) => {
 }
 
 const guardarCarrito = () => {
-    if (carrito.length > 0) {
-        localStorage.setItem("carrito", JSON.stringify(carrito))
-    }
+    carrito.length > 0 && localStorage.setItem("carrito", JSON.stringify(carrito))
 }
 
 const recuperarCarrito = () => {

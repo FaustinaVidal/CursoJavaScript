@@ -15,11 +15,10 @@ const armandoTarjetasMusica = (elemento) => {
 
 const colocandoTarjetasMusica = () => {
     tarjetasMusica.innerHTML = ""
-    if (canciones.length > 0) {
-        canciones.forEach(elemento => {
-            tarjetasMusica.innerHTML += armandoTarjetasMusica(elemento)
-        })
-    }
+    canciones.length > 0 && canciones.forEach(elemento => {
+        tarjetasMusica.innerHTML += armandoTarjetasMusica(elemento)
+    })
+
 }
 
 colocandoTarjetasMusica()

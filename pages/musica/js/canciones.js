@@ -6,6 +6,9 @@ const btnOrdenarCanciones = document.querySelector("button#ordenarCancionesNombr
 
 const btnOrdenarCancionesInverso = document.querySelector("button#ordenarCancionesNombre")
 
+//Quise poner estas funciones con Operador ternario
+//pero el boton no funcionaba bien 
+//(tenia que darle doble click para que me ordene en vez de un click solo)
 //-------------Ordenar por me gustas-------------
 const ordenarPormeGusta = () => {
     canciones.sort((elementa, elementb) => {

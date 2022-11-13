@@ -34,15 +34,4 @@ const preguntarGuardarDatosIniciarSesion = () => {
     }
 }
 
-/*
-const realizarCotizacion = () => {
-    if (datosCompletos()) {
-        const coti = new Cotizador(costoM2, selectPropiedad.value, selectUbicacion.value, inputMetros2.value)
-        valorPoliza.innerText = coti.cotizarPoliza()
-        btnEnviar.classList.remove("ocultar")
-    } else {
-        alert("⛔️ Debes completar todos los datos en pantalla.")
-    }
-}*/
-
 btnIniciarSesion.addEventListener("click", preguntarGuardarDatosIniciarSesion)
