@@ -14,21 +14,23 @@ const datosCompletos = () => ((inputUsuario.value.trim() !== "") && (inputContra
 const recuperarDatosiniciarSesion = () => {
     if (localStorage.getItem("usuario")) {
         inputUsuario.value = localStorage.getItem("usuario")
+    }
+    if (localStorage.getItem("contraseña")) {
         inputContraseña.value = localStorage.getItem("contraseña")
     }
 }
 
 const preguntarGuardarDatosIniciarSesion = () => {
     if (datosCompletos()) {
-        let pregunta = confirm("¿Deseas que recuerde tu usuario y contraseña?")
-        if (pregunta) {
-            document.addEventListener("DOMContentLoaded", recuperarDatosiniciarSesion)
-            iniciarSesion()
-        } else {
-            iniciarSesion()
-            localStorage.removeItem("usuario")
-            localStorage.removeItem("contraseña")
-        }
+        let pregunta = confirm("¿Deseas guardar tu usuario y contraseña?")
+            if (pregunta) {
+                document.addEventListener("DOMContentLoaded", recuperarDatosiniciarSesion)
+                iniciarSesion()
+            } else {
+                iniciarSesion()
+                localStorage.removeItem("usuario")
+                localStorage.removeItem("contraseña")
+            }
     } else {
         alert("⛔️ Debes llenar todos los datos en pantalla.")
     }

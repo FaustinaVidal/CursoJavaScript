@@ -24,8 +24,11 @@ const agregarPais = () => {
         respuesta && agregarPais()
     } else {
         paises.push(nuevoPais)
+        paisesNuevos.push(nuevoPais)
         colocandoListaPaises()
     }
+    guardarPaisesNuevos()
 }
 
 btnAgregarPaises.onclick = agregarPais
+

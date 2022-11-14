@@ -9,10 +9,13 @@
     <!--Iconos-->
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link rel="shortcut icon" href="./img/Bejo.jpg" type="image/x-icon">
+    <!--Libreria-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--js-->
     <script defer src="./js/arrayPaises.js"></script>
     <script defer src="./js/header.js"></script>
     <script defer src="./js/footer.js"></script>
+    <script defer src="./js/recuperarPaises.js"></script>
     <script defer src="./js/mainPaises.js"></script>
     <script defer src="./js/paises.js"></script>
     <!--css-->
@@ -27,7 +30,8 @@
         <section class="section__index">
             <article class="cuenta">
                 <fieldset class="cuenta__cuadro">
-                    <legend class="cuenta__texto">¿Ya tienes una cuenta?</legend>
+                    <h1 class="cuenta__texto">¿Ya tienes una cuenta?</h1>
+                    <!--<legend class="cuenta__texto">¿Ya tienes una cuenta?</legend>-->
                     <a href="./pages/iniciarSesion.html">
                         <button class="cuenta__boton">Iniciar Sesión</button>
                     </a>
@@ -36,9 +40,10 @@
                     </a>
                 </fieldset>
             </article>
-            <article>
+            <article class="cuenta">
                 <fieldset class="cuenta__cuadro">
-                    <legend class="cuenta__texto">Proxima gira:</legend>
+                    <!--<legend class="cuenta__texto">Proxima gira:</legend>-->
+                    <h1 class="cuenta__texto">Proxima gira:</h1>
                     <ul class="listaPaises" id="listaDePaises"></ul>
                     <p>¿Tu pais no está en la lista?</p>
                     <p>Agregalo para que podamos sumarlo a la gira!</p>

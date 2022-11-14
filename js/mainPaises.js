@@ -6,9 +6,7 @@ const armandoListaPaises = (elemento) => {
 
 const colocandoListaPaises = () => {
     listaPaises.innerHTML = ""
-    paises.length > 0 && paises.forEach(elemento => {
-        listaPaises.innerHTML += armandoListaPaises(elemento)
-    })
+    paises.length > 0 && paises.forEach(elemento => listaPaises.innerHTML += armandoListaPaises(elemento))
 }
 
 colocandoListaPaises()

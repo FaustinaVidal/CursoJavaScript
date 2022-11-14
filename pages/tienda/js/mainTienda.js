@@ -1,12 +1,12 @@
 const tarjetasTienda = document.querySelector("section#tienda__tarjetas")//main
 
-const armandoTarjetasTienda = (elemento) => {
+const armandoTarjetasTienda = ({nombre, producto, precio, imagen}) => {
     return `<article>
                 <div class="tarjetaTienda">
-                    <img class="tarjetaTienda__img" src="./tienda/img/${elemento.imagen}.jpg" loading="lazy" alt="${elemento.producto}">
-                    <p id="productoNombre" class="tarjetaTienda__texto">${elemento.nombre}</p>
-                    <p>$ ${elemento.precio}</p>
-                    <button class="tarjetaTienda__boton añadirAlCarrito" id="${elemento.nombre}">Añadir al carrito ➕</button>
+                    <img class="tarjetaTienda__img" src="./tienda/img/${imagen}.jpg" loading="lazy" alt="${producto}">
+                    <p id="productoNombre" class="tarjetaTienda__texto">${nombre}</p>
+                    <p>$ ${precio}</p>
+                    <button class="tarjetaTienda__boton añadirAlCarrito" id="${nombre}">Añadir al carrito ➕</button>
                 </div>
             </article>`
 }
