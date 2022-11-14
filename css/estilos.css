@@ -117,6 +117,7 @@ header {
     justify-content: center;
     font-size: 20px;
 }
+
 .footer__lista {
     display: flex;
     list-style: none;
@@ -128,6 +129,7 @@ header {
     gap: 2rem;
     font-size: 20px;
 }
+
 .footer__icono {
     transition: all 1s;
 }
@@ -138,18 +140,20 @@ header {
 
 /*-------------------------------------------------------------*/
 /*index.html*/
-.section__index{
+.section__index {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px 20px 40px;
 }
+
 /*Tarjeta de cuenta*/
-.cuenta{
+.centrar {
     text-align: center;
 }
-.cuenta__cuadro{
+
+.cuenta__cuadro {
     background-color: rgba(255, 255, 255, 0.212);
     width: 400px;
     height: 400px;
@@ -160,42 +164,23 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.cuenta__texto{
+.cuenta__texto {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-}
-
-.cuenta__boton{
-    border-radius: 10px;
-    color: white;
-    background-color: #0F5897;
-    padding: 10px 15px 10px 15px;
-    text-align: center;
-}
-
-.cuenta__boton:hover {
-    animation-name: animacionAlTocar;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-}
-
-@keyframes animacionAlTocar {
-    100% {
-        background-color: rgb(255, 0, 212);
-    }
 }
 
 .listaPaises {
     list-style: none;
     text-align: center;
 }
+
 .pais {
     margin: 5px;
 }
 
 /*musica.html*/
-.tarjetaMusica{
+.tarjetaMusica {
     background-color: white;
     width: 530px;
     height: 400px;
@@ -205,47 +190,35 @@ header {
     text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.tarjetaMusica__video{
+
+.tarjetaMusica__video {
     margin-top: 15px;
     border-radius: 10px;
 }
-.tarjetaMusica__texto{
+
+.tarjetaMusica__texto {
     text-align: justify;
     text-align: center;
     padding: 15px;
     font-size: 20px;
 }
-.tarjetaMusica__meGustas{
+
+.tarjetaMusica__meGustas {
     text-align: justify;
     text-align: center;
     font-size: 14px;
 }
-.tarjetaMusica__boton{
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    background-color: #000000;
-    padding: 5px;
-    margin-top: 5px;
-    font-style: italic;
-    font-weight: bold;
-}
-.tarjetaMusica__boton:hover {
-    animation-name: animacionAlTocar;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-}
-
 
 /*tienda.html*/
 
-.tarjetas{
+.tarjetas {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.tarjetaTienda{
+.tarjetaTienda {
     background-color: white;
     width: 300px;
     height: 380px;
@@ -255,75 +228,32 @@ header {
     text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.tarjetaTienda__img{
+
+.tarjetaTienda__img {
     width: 250px;
     height: 250px;
 }
-.tarjetaTienda__texto{
+
+.tarjetaTienda__texto {
     text-align: justify;
     text-align: center;
     padding: 15px;
     font-size: 20px;
 }
-.tarjetaTienda__boton{
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    background-color: #000000;
-    padding: 5px;
-    text-align: center;
-    margin-top: 5px;
-    font-style: italic;
-    font-weight: bold;
-}
-.tarjetaTienda__boton:hover {
-    animation-name: animacionAlTocar;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-}
 
 /* musica.html y tienda.html*/
-.botonesOrden{
+.botonesOrden {
     position: absolute;
     top: 100px;
     right: 10px;
 }
 
-.botonOrden{
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    background-color: #0F5897;
-    padding: 5px;
-    font-style: italic;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-.botonOrden:hover {
-    animation-name: animacionAlTocar;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-}
 ::placeholder {
     color: white;
 }
+
 /*registrarme.html e iniciarSesion.html*/
-.botonBack{
-    border-radius: 50%;
-    color: black;
-    background-color: #ffffff;
-    padding: 5px 10px 5px 10px;
-    margin-left: 40px;
-    text-align: center;
-    
-}
-
-.botonBack:hover {
-    animation-name: animacionAlTocar;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-}
-
-.section__formulario{
+.section__formulario {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -331,7 +261,7 @@ header {
     padding: 20px 40px 20px 40px;
 }
 
-.formulario{
+.formulario {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.76);
     width: 400px;
@@ -343,21 +273,64 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.formulario__texto{
+.formulario__texto {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
 }
 
-.formulario__boton{
+/*carrito*/
+.carrito {
+    margin-left: 100px;
+    margin-top: -32px;
+    font-size: 30px;
+    position: absolute;
+}
+
+table {
+    border: 1px solid rgb(0, 0, 0);
+    /*background: rgba(255, 255, 255, 0.493);*/
+    background-color: white;
+    border-radius: 5px;
+    width: 100px;
+    margin: 30px auto;
+}
+
+th {
+    background-color: rgb(255, 0, 212);
+    font-style: italic;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+td {
+    color: #000;
+    font-size: 16px;
+}
+
+.miniatura {
+    width: 6rem;
+    height: 6rem;
+}
+
+.totalCompras {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*botones*/
+.boton__centrado {
     border-radius: 10px;
     color: white;
     background-color: #0F5897;
     padding: 10px 15px 10px 15px;
     text-align: center;
+    cursor: pointer;
 }
 
-.formulario__boton:hover {
+.boton__centrado:hover {
     animation-name: animacionAlTocar;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
@@ -369,10 +342,59 @@ header {
     }
 }
 
-/*carrito*/
-.carrito{
-    margin-left: 100px;
-    margin-top: -32px;
-    font-size: 30px;
-    position: absolute;
+.boton__black {
+    border-radius: 10px;
+    color: white;
+    background-color: #000000;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.boton__black:hover {
+    animation-name: animacionAlTocar;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.boton__fila {
+    border-radius: 10px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.boton__fila:hover {
+    animation-name: animacionAlTocar;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.botonBack {
+    border-radius: 50%;
+    color: black;
+    background-color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    margin-left: 40px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.botonBack:hover {
+    animation-name: animacionAlTocar;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.boton__centrado {
+    border-radius: 10px;
+    color: white;
+    background-color: #0F5897;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    cursor: pointer;
 }

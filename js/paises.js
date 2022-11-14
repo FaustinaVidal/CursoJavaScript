@@ -26,9 +26,9 @@ const agregarPais = () => {
         paises.push(nuevoPais)
         paisesNuevos.push(nuevoPais)
         colocandoListaPaises()
+        toast(`"Haz agregado ${nuevoPais} a la gira!"`)
     }
     guardarPaisesNuevos()
 }
 
 btnAgregarPaises.onclick = agregarPais
-

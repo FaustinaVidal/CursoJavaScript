@@ -6,7 +6,7 @@ const armandoTarjetasTienda = ({nombre, producto, precio, imagen}) => {
                     <img class="tarjetaTienda__img" src="./tienda/img/${imagen}.jpg" loading="lazy" alt="${producto}">
                     <p id="productoNombre" class="tarjetaTienda__texto">${nombre}</p>
                     <p>$ ${precio}</p>
-                    <button class="tarjetaTienda__boton añadirAlCarrito" id="${nombre}">Añadir al carrito ➕</button>
+                    <button class="boton__black añadirAlCarrito" id="${nombre}">Añadir al carrito ➕</button>
                 </div>
             </article>`
 }

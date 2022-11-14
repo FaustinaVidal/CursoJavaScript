@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link rel="shortcut icon" href="../img/Bejo.jpg" type="image/x-icon">
     <!--Librerias-->
-        <!--sweetalert2-->
+    <!--sweetalert2-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <!--toastify-->
+    <!--toastify-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!--js-->
@@ -36,15 +36,16 @@
     <main>
         <div class="titulo">
             <h1>SHOP</h1>
-            <a class="carrito" href="./carrito.html">
-                <span class="jam jam-shopping-cart"></span>
-            </a>
         </div>
-
         <div class="botonesOrden">
-            <button class="botonOrden" id="ordenarProductosPrecio">Ordenar por precio</button>
-            <button class="botonOrden" id="ordenarProductosNombre">Ordenar por nombre</button>
-            <input class="botonOrden" id="buscarProducto" type="search" placeholder="Buscar producto">
+            <a href="./carrito.html">
+                <button class="boton__fila">
+                    🛒 Ir al carrito
+                </button>
+            </a>
+            <button class="boton__fila" id="ordenarProductosPrecio">Ordenar por precio</button>
+            <button class="boton__fila" id="ordenarProductosNombre">Ordenar por nombre</button>
+            <input class="boton__fila" id="buscarProducto" type="search" placeholder="Buscar producto">
         </div>
         <section class="tarjetas" id="tienda__tarjetas">
         </section>

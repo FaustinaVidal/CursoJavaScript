@@ -8,7 +8,7 @@ const armandoTarjetasMusica = (elemento) => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="tarjetaMusica__texto">${elemento.artista} - ${elemento.cancion}</p>
-                    <button class="tarjetaMusica__boton" id="${elemento.cancion}">👍🏻 ${elemento.meGusta}</button>
+                    <button class="boton__black" id="${elemento.cancion}">👍🏻 ${elemento.meGusta}</button>
                 </div>
             </article>`
 }

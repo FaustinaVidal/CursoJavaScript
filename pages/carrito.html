@@ -9,9 +9,15 @@
     <!--Icono-->
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link rel="shortcut icon" href="../img/Bejo.jpg" type="image/x-icon">
+    <!--Librerias-->
+        <!--sweetalert2-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--toastify-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!--js-->
     <script defer src="./tienda/js/headerTienda.js"></script>
     <script defer src="../js/footer.js"></script>
+    <script defer src="./carrito/checkout.js"></script>
     <!--
     <script defer src="./tienda/js/carrito.js"></script>
     <script defer src="./tienda/js/contenido.js"></script>
@@ -28,9 +34,29 @@
     <header id="headerTienda"></header>
 
     <main>
-       
-        <h1 class="titulo jam jam-shopping-cart"></h1>
+        <h1 class="titulo">CHECKOUT</h1>
+        <div class="centrar">
+            <a href="./tienda.html">
+                <button class="boton__centrado">Seguir comprando</button>
+            </a>
+            <section>
+                <table class="tabla">
+                    <thead class="tabla__titulo">
+                        <tr>
+                            <th>Quitar</th>
+                            <th>Imagen</th>
+                            <th>Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaCarritoRecuperado">
 
+                    </tbody>
+                </table>
+            </section>
+            <button class="boton__centrado" id="btnComprar">Finalizar compra</button>
+        </div>
     </main>
 
     <footer class="footer" id="footerInicio"></footer>

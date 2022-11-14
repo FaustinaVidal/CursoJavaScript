@@ -9,8 +9,12 @@
     <!--Iconos-->
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link rel="shortcut icon" href="./img/Bejo.jpg" type="image/x-icon">
-    <!--Libreria-->
+    <!--Librerias-->
+        <!--sweetalert2-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!--js-->
     <script defer src="./js/carteles.js"></script>
     <script defer src="./js/arrayPaises.js"></script>
@@ -29,19 +33,19 @@
     <main>
         <h1 class="titulo">WELCOME</h1>
         <section class="section__index">
-            <article class="cuenta">
+            <article class="centrar">
                 <fieldset class="cuenta__cuadro">
                     <h1 class="cuenta__texto">¿Ya tienes una cuenta?</h1>
                     <!--<legend class="cuenta__texto">¿Ya tienes una cuenta?</legend>-->
                     <a href="./pages/iniciarSesion.html">
-                        <button class="cuenta__boton">Iniciar Sesión</button>
+                        <button class="boton__centrado">Iniciar Sesión</button>
                     </a>
                     <a href="./pages/registrarme.html">
-                        <button class="cuenta__boton">Registrarme</button>
+                        <button class="boton__centrado">Registrarme</button>
                     </a>
                 </fieldset>
             </article>
-            <article class="cuenta">
+            <article class="centrar">
                 <fieldset class="cuenta__cuadro">
                     <!--<legend class="cuenta__texto">Proxima gira:</legend>-->
                     <h1 class="cuenta__texto">Proxima gira:</h1>
@@ -49,8 +53,8 @@
                     <p>¿Tu pais no está en la lista?</p>
                     <p>Agregalo para que podamos sumarlo a la gira!</p>
                     <div>
-                        <button class="cuenta__boton" id="ordenarPorPais">Ordenar paises</button>
-                        <button class="cuenta__boton" id="agregarUnPais">Agregar pais</button>
+                        <button class="boton__fila" id="ordenarPorPais">Ordenar paises</button>
+                        <button class="boton__fila" id="agregarUnPais">Agregar pais</button>
                     </div>
                 </fieldset>
             </article>
