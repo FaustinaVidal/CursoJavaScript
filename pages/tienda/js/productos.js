@@ -24,7 +24,7 @@ const ordenarPorPrecioInverso = () => {
     colocandoTarjetasTienda()
 }
 
-btnOrdenarPrecioInverso.addEventListener("dblclick",ordenarPorPrecioInverso)
+btnOrdenarPrecioInverso.addEventListener("dblclick", ordenarPorPrecioInverso)
 //-------------Ordenar por nombre-------------
 const ordenarPorProducto = () => {
     productos.sort((elementa, elementb) => {

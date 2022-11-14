@@ -32,7 +32,7 @@ const preguntarGuardarDatosIniciarSesion = () => {
                 localStorage.removeItem("contraseña")
             }
     } else {
-        alert("⛔️ Debes llenar todos los datos en pantalla.")
+        alerta("warning", "Debes llenar todos los campos en pantalla.")
     }
 }
 

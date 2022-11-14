@@ -14,6 +14,7 @@ const añadirAlCarrito = (nombre) => {
     if (resultado !== undefined) {
         carrito.push(resultado)
         guardarCarrito()
+        toast("Tu producto ha sigo añadido al carrito correctamente")
     }
 }
 
