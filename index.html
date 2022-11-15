@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link rel="shortcut icon" href="./img/Bejo.jpg" type="image/x-icon">
     <!--Librerias-->
-        <!--sweetalert2-->
+    <!--sweetalert2-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <!--toastify-->
+    <!--toastify-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!--js-->
@@ -23,26 +23,24 @@
     <script defer src="./js/recuperarPaises.js"></script>
     <script defer src="./js/mainPaises.js"></script>
     <script defer src="./js/paises.js"></script>
+    <script defer src="./js/iniciarSesion.js"></script>
+    <!---->
     <!--css-->
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
     <header id="headerInicio"></header>
-
     <main>
         <h1 class="titulo">WELCOME</h1>
         <section class="section__index">
             <article class="centrar">
                 <fieldset class="cuenta__cuadro">
-                    <h1 class="cuenta__texto">¿Ya tienes una cuenta?</h1>
-                    <!--<legend class="cuenta__texto">¿Ya tienes una cuenta?</legend>-->
-                    <a href="./pages/iniciarSesion.html">
-                        <button class="boton__centrado">Iniciar Sesión</button>
-                    </a>
-                    <a href="./pages/registrarme.html">
-                        <button class="boton__centrado">Registrarme</button>
-                    </a>
+                    <h1 class="cuenta__texto">Iniciar Sesión</h1>
+                    <input class="boton__centrado" id="inputUsuario" type="text" placeholder="Usuario">
+                    <input class="boton__centrado" id="inputContraseña" type="password" name=""
+                        placeholder="Contraseña">
+                    <button class="boton__centrado" id="btnIniciarSesion">Iniciar Sesión</button>
                 </fieldset>
             </article>
             <article class="centrar">
@@ -51,7 +49,7 @@
                     <h1 class="cuenta__texto">Proxima gira:</h1>
                     <ul class="listaPaises" id="listaDePaises"></ul>
                     <p>¿Tu pais no está en la lista?</p>
-                    <p>Agregalo para que podamos sumarlo a la gira!</p>
+                    <p>Envíanos una sugerencia para que podamos sumarlo a la gira!</p>
                     <div>
                         <button class="boton__fila" id="ordenarPorPais">Ordenar paises</button>
                         <button class="boton__fila" id="agregarUnPais">Agregar pais</button>
