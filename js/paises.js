@@ -19,16 +19,18 @@ btnOrdenarPaisesInverso.addEventListener("dblclick",ordenarPaisesInveso)
 //-------------Agregar paises-------------
 const agregarPais = () => {
     let nuevoPais = prompt("¿Que pais deseas agregar a nuestra gira?").trim()
-    if (paises.includes(nuevoPais) && nuevoPais.length > 0) {
-        respuesta = confirm(nuevoPais + " ya esta incluido en la gira ¿Quieres agregar otro pais?")
-        respuesta && agregarPais()
-    } else {
-        paises.push(nuevoPais)
-        paisesNuevos.push(nuevoPais)
-        colocandoListaPaises()
-        toast(`"Haz agregado ${nuevoPais} a la gira!"`)
+    if (nuevoPais.length > 0){
+        if (paises.includes(nuevoPais)) {
+            respuesta = confirm(nuevoPais + " ya esta incluido en la gira ¿Quieres agregar otro pais?")
+            respuesta && agregarPais()
+        } else {
+            paises.push(nuevoPais)
+            paisesNuevos.push(nuevoPais)
+            colocandoListaPaises()
+            toast(`"Haz agregado ${nuevoPais} a la gira!"`)
+        }
+        guardarPaisesNuevos()
     }
-    guardarPaisesNuevos()
 }
 
 btnAgregarPaises.onclick = agregarPais

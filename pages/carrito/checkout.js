@@ -10,11 +10,11 @@ const recuperarCarrito = () => {
 
 const armandoCarritoRecuperado = (elemento) => {
     return `<tr>
-                <td><button class="boton__black btnBorrarDelCarrito" id="${elemento.nombre}">❌</button></td>
-                <td><img class="miniatura" src="./tienda/img/${elemento.imagen}.jpg" loading="lazy" alt="${elemento.producto}"></td>
-                <td>${elemento.nombre}</td>
-                <td>${elemento.producto}</td>
-                <td>$ ${elemento.precio}</td>
+                <td class="tabla__contenido"><button class="boton__black btnBorrarDelCarrito" id="${elemento.nombre}">❌</button></td>
+                <td class="tabla__contenido"><img class="miniatura" src="./tienda/img/${elemento.imagen}.jpg" loading="lazy" alt="${elemento.producto}"></td>
+                <td class="tabla__contenido">${elemento.nombre}</td>
+                <td class="tabla__contenido">${elemento.producto}</td>
+                <td class="tabla__contenido">$ ${elemento.precio}</td>
             </tr>`
 }
 
@@ -22,10 +22,10 @@ const totalPrecioCarritoRecuperado = () => {
     let totalCarrito = carrito.reduce((acc, element)=> acc + element.precio, 0)
     return `<tr>
                 <td></td>
-                <td>Total de la compra</td>
                 <td></td>
                 <td></td>
-                <td class="totalCompras">$ ${totalCarrito.toFixed(2)}</td>
+                <td class="tabla__total">Total:</td>
+                <td class="tabla__total">$ ${totalCarrito.toFixed(2)}</td>
             </tr>`
 }
 
@@ -63,7 +63,7 @@ return  Swal.fire({
 }
 
 const carritoVacio = () => {
-    alertaCarrito("¡No tienes productos en tu carrito!", "Agrega productos a tu carrito para realizar la compra.", "warning","¡Ops!") 
+    alertaCarrito("¡Aún no tienes productos en tu carrito!", "Agrega productos a tu carrito para finalizar tu compra.", "warning","¡Ops!") 
 }
 
 const finalizarCompra = () => {

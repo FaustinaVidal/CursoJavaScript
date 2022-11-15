@@ -183,7 +183,7 @@ header {
 .tarjetaMusica {
     background-color: white;
     width: 530px;
-    height: 400px;
+    height: 370px;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 10px;
     margin: 15px;
@@ -239,6 +239,18 @@ header {
     text-align: center;
     padding: 15px;
     font-size: 20px;
+}
+.tarjeta__error {
+    background-color:  rgba(255, 255, 255, 0.493);
+    width: auto;
+    height: auto;
+    border: 3px solid rgb(68, 0, 0);
+    border-radius: 10px;
+    color: darkred;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /* musica.html y tienda.html*/
@@ -296,18 +308,23 @@ table {
     margin: 30px auto;
 }
 
-th {
-    background-color: rgb(255, 0, 212);
+.tabla__titulo {
+    background-color: rgba(255, 0, 212, 0.349);
     font-style: italic;
     padding: 5px 20px 5px 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 20px;
     color: black;
 }
 
-td {
+.tabla__contenido {
     color: #000;
     font-size: 16px;
+}
+.tabla__total {
+    background-color: rgba(255, 0, 212, 0.349);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .miniatura {
@@ -315,9 +332,10 @@ td {
     height: 6rem;
 }
 
-.totalCompras {
-    padding-top: 20px;
-    padding-bottom: 20px;
+/*cargando*/
+.homero {
+    width: 500px;
+    height: 350px;
 }
 
 /*botones*/

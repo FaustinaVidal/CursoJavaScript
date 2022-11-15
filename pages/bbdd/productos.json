@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nombre": "CALCETINES DIBEJO",
+        "producto": "Medias",
+        "precio": 563.24,
+        "imagen": "medias01"
+    },
+    {
+        "id": 2,
+        "nombre": "CALCETINES GRAFFITI",
+        "producto": "Medias",
+        "precio": 563.24,
+        "imagen": "medias02"
+    },
+    {
+        "id": 3,
+        "nombre": "CALCETINES HIPI HAPA",
+        "producto": "Medias",
+        "precio": 563.24,
+        "imagen": "medias03"
+    },
+    {
+        "id": 4,
+        "nombre": "CALCETINES PEZ",
+        "producto": "Medias",
+        "precio": 563.24,
+        "imagen": "medias04"
+    },
+    {
+        "id": 5,
+        "nombre": "CALCETINES POPURRÍ",
+        "producto": "Medias",
+        "precio": 563.24,
+        "imagen": "medias05"
+    },
+    {
+        "id": 6,
+        "nombre": "SO FRESH",
+        "producto": "Remera",
+        "precio": 683.93,
+        "imagen": "remeras01"
+    },
+    {
+        "id": 7,
+        "nombre": "LA FLORINATA",
+        "producto": "Remera",
+        "precio": 683.93,
+        "imagen": "remeras02"
+    },
+    {
+        "id": 8,
+        "nombre": "GORRO",
+        "producto": "Gorro",
+        "precio": 603.47,
+        "imagen": "gorros01"
+    },
+    {
+        "id": 9,
+        "nombre": "CACHI RICHI HOODIE",
+        "producto": "Buzo",
+        "precio": 1649.49,
+        "imagen": "buzos01"
+    },
+    {
+        "id": 10,
+        "nombre": "DIBEJO HOODIE",
+        "producto": "Buzo",
+        "precio": 1649.49,
+        "imagen": "buzos02"
+    }
+]
