@@ -14,14 +14,14 @@ const ordenarPorPrecio = () => {
         }
         return 0
     })
-    colocandoTarjetasTienda()
+    colocandoTarjetasTiendaConJSON()
 }
 
 btnOrdenarPrecio.onclick = ordenarPorPrecio
 //-------------Ordenar por Precio Inverso-------------
 const ordenarPorPrecioInverso = () => {
     productos.reverse().precio
-    colocandoTarjetasTienda()
+    colocandoTarjetasTiendaConJSON()
 }
 
 btnOrdenarPrecioInverso.addEventListener("dblclick", ordenarPorPrecioInverso)
@@ -36,14 +36,14 @@ const ordenarPorProducto = () => {
         }
         return 0
     })
-    colocandoTarjetasTienda()
+    colocandoTarjetasTiendaConJSON()
 }
 
 btnOrdenarProductos.onclick = ordenarPorProducto
 //-------------Ordenar por nombre Inverso-------------
 const ordenarPorProductoInverso = () => {
     productos.reverse().nombre
-    colocandoTarjetasTienda()
+    colocandoTarjetasTiendaConJSON()
 }
 
 btnOrdenarProductosInverso.addEventListener("dblclick",ordenarPorProductoInverso)

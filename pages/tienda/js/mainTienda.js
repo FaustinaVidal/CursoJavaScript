@@ -10,7 +10,7 @@ const armandoTarjetasTienda = ({ nombre, producto, precio, imagen }) => {
                 </div>
             </article>`
 }
-
+/*
 const colocandoTarjetasTienda = () => {
     tarjetasTienda.innerHTML = homero()
     setTimeout(() => {
@@ -21,3 +21,4 @@ const colocandoTarjetasTienda = () => {
 }
 
 colocandoTarjetasTienda()
+*/
