@@ -1,5 +1,4 @@
 const tarjetasMusica = document.querySelector("section#musica__tarjetas")//main
-const meGusta = () => parseInt(Math.random() * 100000)
 
 const armandoTarjetasMusica = (elemento) => {
     return `<article>
@@ -9,7 +8,7 @@ const armandoTarjetasMusica = (elemento) => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="tarjetaMusica__texto">${elemento.artista} - ${elemento.cancion}</p>
-                    <p class="" id="meGustas">${meGusta()} 👍🏻</p>
+                    <p class="" id="meGustas">${elemento.meGustas} 👍🏻</p>
                 </div>
             </article>`
 }
@@ -22,14 +21,3 @@ const armandoTarjetasMusicaError = (elemento) => {
                 </div>
             </section>`
 }
-
-/*
-const colocandoTarjetasMusica = () => {
-    tarjetasMusica.innerHTML = homero()
-    setTimeout(() => {
-        tarjetasMusica.innerHTML = ""
-        canciones.length > 0 && canciones.forEach(elemento => tarjetasMusica.innerHTML += armandoTarjetasMusica(elemento))
-    }, 2000);
-}*/
-
-//colocandoTarjetasMusica()

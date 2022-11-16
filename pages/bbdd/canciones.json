@@ -3,48 +3,56 @@
         "id": 1,
         "artista": "Bejo",
         "cancion": "Helarte",
+        "meGustas": 24808,
         "video": "OJp4-wFOu3k"
     },
     {
         "id": 2,
         "artista": "Bejo",
         "cancion": "A mi manera",
+        "meGustas": 8471,
         "video": "r9oNjUOS4pk"
     },
     {
         "id": 3,
         "artista": "Bejo",
         "cancion": "Mentecato",
+        "meGustas": 20007,
         "video": "8DZtdiL-9EU"
     },
     {
         "id": 4,
         "artista": "Bejo",
         "cancion": "Como los gatos",
+        "meGustas": 14844,
         "video": "zVWICv4cCtE"
     },
     {
         "id": 5,
         "artista": "Bejo",
         "cancion": "Rapapolvo",
-        "video": "4bDKRvLSJ_8"
+        "meGustas": 19072,
+        "video": "4bDKRvLSJ8"
     },
     {
         "id": 6,
         "artista": "Bejo",
         "cancion": "Amigos desconocidos",
+        "meGustas": 26212,
         "video": "TK0qPHgJRYM"
     },
     {
         "id": 7,
         "artista": "Bejo",
         "cancion": "Una papa pal kilo",
+        "meGustas": 26828,
         "video": "dpkBGvwuuM4"
     },
     {
         "id": 8,
         "artista": "Bejo",
         "cancion": "Perogrullo",
+        "meGustas": 30626,
         "video": "LNh2LnU4f3Q"
     }
 ]

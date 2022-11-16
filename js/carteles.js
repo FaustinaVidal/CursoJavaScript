@@ -30,3 +30,19 @@ const toast = (texto) => {
         },
       }).showToast();
 }
+/*
+const agregarPaises = async () => {
+    const { value: text } = await Swal.fire({
+                                        title: '¿Que pais deseas agregar a nuestra gira?',
+                                        input: 'text',
+                                        inputPlaceholder: 'Pais',
+                                        width: '400px'
+                                    })
+    if (text) { 
+        let nuevoPais = text
+    } else {
+        console.warn("No se ingresó un valor.")
+        //Swal.fire("Ingresa un texto válido!")
+    }
+}
+*/
