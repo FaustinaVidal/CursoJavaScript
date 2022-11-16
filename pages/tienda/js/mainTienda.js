@@ -22,3 +22,11 @@ const colocandoTarjetasTienda = () => {
 
 colocandoTarjetasTienda()
 */
+const armandoTarjetasTiendaError = (elemento) => {
+    return `<section class="tarjetas" id="tienda__tarjetas">
+                <div class="tarjeta__error">
+                    <h2>No ha sido posible cargar los productos 💣</h2>
+                    <h3>Por favor, intenta mas tarde.</h3>
+                </div>
+            </section>`
+}

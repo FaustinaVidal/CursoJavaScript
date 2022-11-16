@@ -14,6 +14,9 @@ const colocandoTarjetasTiendaConJSON = async () => {
         tarjetasTienda.innerHTML = homero()
         setTimeout(() => {
             tarjetasTienda.innerHTML = armoHTML
+            if (activoBtnAñadirAlCarrito) {
+                activarBtnAñadirAlCarrito()
+            }
         }, 2000);
     }
 }
