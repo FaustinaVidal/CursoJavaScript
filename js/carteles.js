@@ -30,6 +30,25 @@ const toast = (texto) => {
         },
       }).showToast();
 }
+
+const cuandoAgregaPaisRepetido = () => {
+    Swal.fire({
+        title: "Ese pais ya esta incluido en la gira",
+        text: '¿Quieres sugerir otro?',
+        showCancelButton: true,
+        confirmButtonText: 'Sí',
+        cancelButtonText: 'No'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                cartelAgregarPais()
+            } else if (result.isDismissed) {
+                return
+            }
+      })
+}
+
+//
+
 /*
 const agregarPaises = async () => {
     const { value: text } = await Swal.fire({

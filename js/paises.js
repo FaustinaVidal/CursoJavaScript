@@ -15,16 +15,14 @@ const ordenarPaisesInveso = () => {
     colocandoListaPaises()
 }
 
-btnOrdenarPaisesInverso.addEventListener("dblclick",ordenarPaisesInveso)
+btnOrdenarPaisesInverso.addEventListener("dblclick", ordenarPaisesInveso)
 //-------------Agregar paises-------------
-const agregarPais = () => {
-    let nuevoPais = prompt("¿Que pais deseas agregar a nuestra gira?").trim()
-    if (nuevoPais.length > 0){
+const agregarPais = (nuevoPais) => {
+    if (nuevoPais.length > 0) {
         if (paises.includes(nuevoPais)) {
-            respuesta = confirm(nuevoPais + " ya esta incluido en la gira ¿Quieres sugerir otro pais?")
-            respuesta && agregarPais()
+            respuesta = cuandoAgregaPaisRepetido()
+            respuesta && cartelAgregarPais()
         } else {
-            //paises.push(nuevoPais)
             paisesNuevos.push(nuevoPais)
             colocandoListaPaises()
             toast(`"Haz sugerido ${nuevoPais} a la gira!"`)
@@ -33,4 +31,16 @@ const agregarPais = () => {
     }
 }
 
-btnAgregarPaises.onclick = agregarPais
+
+const cartelAgregarPais = async () => {
+    const { value: nuevoPais } = await Swal.fire({
+        showCloseButton: true,
+        title: '¿Que pais deseas agregar a nuestra gira?',
+        input: 'text',
+        inputPlaceholder: 'Pais',
+        width: '400px'
+    })
+    agregarPais(nuevoPais)
+}
+
+btnAgregarPaises.onclick = cartelAgregarPais

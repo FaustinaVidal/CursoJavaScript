@@ -1,10 +1,10 @@
 let canciones = []
-const URL = "./bbdd/canciones.json"
+const URLCanciones = "./bbdd/canciones.json"
 
 const colocandoTarjetasMusicaConJSON = async () => {
     let armoHTML = ""
     try {
-        const response = await fetch(URL)
+        const response = await fetch(URLCanciones)
         canciones = await response.json()
         canciones.forEach(cancion => armoHTML += armandoTarjetasMusica(cancion));
     } catch (error) {
