@@ -1,5 +1,6 @@
 let canciones = []
-const URLCanciones = "./bbdd/canciones.json"
+const URLCanciones = "https://6376d41881a568fc2506aef9.mockapi.io/api/v1/canciones"
+//"./bbdd/canciones.json"
 
 const colocandoTarjetasMusicaConJSON = async () => {
     let armoHTML = ""

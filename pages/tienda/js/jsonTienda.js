@@ -1,5 +1,6 @@
 let productos = []
-const URLProductos = "./bbdd/productos.json"
+const URLProductos = "https://6376d41881a568fc2506aef9.mockapi.io/api/v1/productos"
+//"./bbdd/productos.json"
 
 const colocandoTarjetasTiendaConJSON = async () => {
     let armoHTML = ""
