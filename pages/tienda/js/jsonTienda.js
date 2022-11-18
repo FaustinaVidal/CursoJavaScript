@@ -22,16 +22,3 @@ const colocandoTarjetasTiendaConJSON = async () => {
     }
 }
 colocandoTarjetasTiendaConJSON()
-
-/*
-const colocandoTarjetasTienda = () => {
-    tarjetasTienda.innerHTML = homero()
-    setTimeout(() => {
-        tarjetasTienda.innerHTML = ""
-        productos.length > 0 && productos.forEach(elemento => tarjetasTienda.innerHTML += armandoTarjetasTienda(elemento))
-        activarBtnAñadirAlCarrito()
-    }, 2000);
-}
-
-colocandoTarjetasTienda()
-*/

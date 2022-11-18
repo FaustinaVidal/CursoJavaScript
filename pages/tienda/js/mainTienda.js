@@ -10,18 +10,7 @@ const armandoTarjetasTienda = ({ nombre, producto, precio, imagen }) => {
                 </div>
             </article>`
 }
-/*
-const colocandoTarjetasTienda = () => {
-    tarjetasTienda.innerHTML = homero()
-    setTimeout(() => {
-        tarjetasTienda.innerHTML = ""
-        productos.length > 0 && productos.forEach(elemento => tarjetasTienda.innerHTML += armandoTarjetasTienda(elemento))
-        activarBtnAñadirAlCarrito()
-    }, 2000);
-}
 
-colocandoTarjetasTienda()
-*/
 const armandoTarjetasTiendaError = (elemento) => {
     return `<section class="tarjetas" id="tienda__tarjetas">
                 <div class="tarjeta__error">
