@@ -8,7 +8,7 @@ const armandoTarjetasMusica = (elemento) => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="tarjetaMusica__texto">${elemento.artista} - ${elemento.cancion}</p>
-                    <p class="" id="meGustas">${elemento.meGustas} 👍🏻</p>
+                    <p class="tarjetaMusica__meGustas" id="meGustas">${elemento.meGustas} 👍🏻</p>
                 </div>
             </article>`
 }
